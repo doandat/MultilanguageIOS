@@ -1,0 +1,99 @@
+
+/* Class = "UIButton"; normalTitle = "Edit event"; ObjectID = "2cm-CP-aR7"; */
+"2cm-CP-aR7.normalTitle" = "Edit event";
+
+/* Class = "UIButton"; normalTitle = "Google Calendar"; ObjectID = "8Yd-TT-eeF"; */
+"8Yd-TT-eeF.normalTitle" = "Google Calendar";
+
+/* Class = "UIButton"; normalTitle = "Create new Sheet"; ObjectID = "9BO-tL-Zse"; */
+"9BO-tL-Zse.normalTitle" = "Create new Sheet";
+
+/* Class = "UIButton"; normalTitle = "Delete event"; ObjectID = "BLH-ed-ihi"; */
+"BLH-ed-ihi.normalTitle" = "Delete event";
+
+/* Class = "UINavigationItem"; title = "Calendar"; ObjectID = "E8x-3T-49l"; */
+"E8x-3T-49l.title" = "Calendar";
+
+/* Class = "UIButton"; normalTitle = "Google Sign in"; ObjectID = "ITC-Vg-eRU"; */
+"ITC-Vg-eRU.normalTitle" = "Google Sign in";
+
+/* Class = "UIButton"; configuration.title = "Get Playlist Videos"; ObjectID = "RYK-9t-R9D"; */
+"RYK-9t-R9D.configuration.title" = "Get Playlist Videos";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RYK-9t-R9D"; */
+"RYK-9t-R9D.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Upload video"; ObjectID = "TgB-EK-fEY"; */
+"TgB-EK-fEY.configuration.title" = "Upload video";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TgB-EK-fEY"; */
+"TgB-EK-fEY.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Delete video"; ObjectID = "VUK-LJ-kDS"; */
+"VUK-LJ-kDS.configuration.title" = "Delete video";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VUK-LJ-kDS"; */
+"VUK-LJ-kDS.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Append data"; ObjectID = "Vhx-mg-gZO"; */
+"Vhx-mg-gZO.normalTitle" = "Append data";
+
+/* Class = "UIButton"; normalTitle = "Get primary calendar info"; ObjectID = "b3u-Pz-qoI"; */
+"b3u-Pz-qoI.normalTitle" = "Get primary calendar info";
+
+/* Class = "UIButton"; normalTitle = "List all events"; ObjectID = "dFo-wo-gmZ"; */
+"dFo-wo-gmZ.normalTitle" = "List all events";
+
+/* Class = "UIButton"; normalTitle = "Google Spreadsheets"; ObjectID = "fVm-uc-Y8e"; */
+"fVm-uc-Y8e.normalTitle" = "Google Spreadsheets";
+
+/* Class = "UIButton"; configuration.title = "Get Search List"; ObjectID = "gAq-Xe-eKn"; */
+"gAq-Xe-eKn.configuration.title" = "Get Search List";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gAq-Xe-eKn"; */
+"gAq-Xe-eKn.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Create event"; ObjectID = "hCE-an-k1v"; */
+"hCE-an-k1v.normalTitle" = "Create event";
+
+/* Class = "UINavigationItem"; title = "YouTube"; ObjectID = "hol-gf-Jen"; */
+"hol-gf-Jen.title" = "YouTube";
+
+/* Class = "UIButton"; configuration.title = "YouTube"; ObjectID = "nfa-6l-6Sx"; */
+"nfa-6l-6Sx.configuration.title" = "YouTube";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nfa-6l-6Sx"; */
+"nfa-6l-6Sx.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Read Spreadsheets from Drive"; ObjectID = "oc5-ZF-uur"; */
+"oc5-ZF-uur.normalTitle" = "Read Spreadsheets from Drive";
+
+/* Class = "UIButton"; normalTitle = "Read data from sheet"; ObjectID = "okg-GJ-CT9"; */
+"okg-GJ-CT9.normalTitle" = "Read data from sheet";
+
+/* Class = "UINavigationItem"; title = "Drive"; ObjectID = "qaG-xC-Cci"; */
+"qaG-xC-Cci.title" = "Drive";
+
+/* Class = "UIButton"; normalTitle = "Create new Spreadsheet"; ObjectID = "rsM-Xf-Jfb"; */
+"rsM-Xf-Jfb.normalTitle" = "Create new Spreadsheet";
+
+/* Class = "UIButton"; normalTitle = "Get subscribed calendars"; ObjectID = "sgu-iB-NAT"; */
+"sgu-iB-NAT.normalTitle" = "Get subscribed calendars";
+
+/* Class = "UIButton"; normalTitle = "Google drive"; ObjectID = "vCz-WK-vZR"; */
+"vCz-WK-vZR.normalTitle" = "Google drive";
+
+/* Class = "UIButton"; normalTitle = "Send data in a specific cell"; ObjectID = "wE9-bQ-1wn"; */
+"wE9-bQ-1wn.normalTitle" = "Send data in a specific cell";
+
+/* Class = "UIButton"; normalTitle = "Reads Sheets from Spreadsheets"; ObjectID = "wFb-uX-WOy"; */
+"wFb-uX-WOy.normalTitle" = "Reads Sheets from Spreadsheets";
+
+/* Class = "UINavigationItem"; title = "Spreadsheets"; ObjectID = "yur-3z-GJv"; */
+"yur-3z-GJv.title" = "Spreadsheets";
+
+/* Class = "UIButton"; configuration.title = "Update video"; ObjectID = "zvz-Uw-yug"; */
+"zvz-Uw-yug.configuration.title" = "Update video";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zvz-Uw-yug"; */
+"zvz-Uw-yug.normalTitle" = "Button";
