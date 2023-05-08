@@ -26,6 +26,7 @@
 		A9866CF92A03A1B300FDCC81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9866CF82A03A1B300FDCC81 /* GoogleService-Info.plist */; };
 		A9866D022A049C8900FDCC81 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9866D042A049C8900FDCC81 /* Localizable.strings */; };
 		A9C392492A04F2C4001BA8C0 /* MemLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9C3924B2A04F2C4001BA8C0 /* MemLocalizable.strings */; };
+		A9C392532A088C64001BA8C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9C392552A088C64001BA8C0 /* InfoPlist.strings */; };
 		D6EDD4E845D5F58DB69FD183 /* Pods_google_examples_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBB791004B001E45413B6FF /* Pods_google_examples_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,10 @@
 		A9C3924C2A04F2C8001BA8C0 /* zh-Hant */ = {isa = PBXFileReference; explicitFileType = text; name = "zh-Hant"; path = "zh-Hant.lproj/MemLocalizable.strings"; sourceTree = "<group>"; };
 		A9C3924D2A04F2CC001BA8C0 /* vi */ = {isa = PBXFileReference; explicitFileType = text; name = vi; path = vi.lproj/MemLocalizable.strings; sourceTree = "<group>"; };
 		A9C3924E2A04F2CC001BA8C0 /* en */ = {isa = PBXFileReference; explicitFileType = text; name = en; path = en.lproj/MemLocalizable.strings; sourceTree = "<group>"; };
+		A9C392542A088C64001BA8C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9C392562A088C68001BA8C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A9C392572A08943C001BA8C0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A9C392582A08943C001BA8C0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAD197E747E22CF719730617 /* Pods-google-examples-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google-examples-swift.release.xcconfig"; path = "Target Support Files/Pods-google-examples-swift/Pods-google-examples-swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +184,7 @@
 				A1AE23BF25CFE59C00371F21 /* Info.plist */,
 				A9866D042A049C8900FDCC81 /* Localizable.strings */,
 				A9C3924B2A04F2C4001BA8C0 /* MemLocalizable.strings */,
+				A9C392552A088C64001BA8C0 /* InfoPlist.strings */,
 			);
 			path = "google-examples-swift";
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9866D022A049C8900FDCC81 /* Localizable.strings in Resources */,
+				A9C392532A088C64001BA8C0 /* InfoPlist.strings in Resources */,
 				A1AE23BE25CFE59C00371F21 /* LaunchScreen.storyboard in Resources */,
 				A9866CF92A03A1B300FDCC81 /* GoogleService-Info.plist in Resources */,
 				A1AE23BB25CFE59C00371F21 /* Assets.xcassets in Resources */,
@@ -573,6 +580,17 @@
 				A9C3924E2A04F2CC001BA8C0 /* en */,
 			);
 			name = MemLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		A9C392552A088C64001BA8C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C392542A088C64001BA8C0 /* en */,
+				A9C392562A088C68001BA8C0 /* zh-Hans */,
+				A9C392572A08943C001BA8C0 /* zh-Hant */,
+				A9C392582A08943C001BA8C0 /* vi */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

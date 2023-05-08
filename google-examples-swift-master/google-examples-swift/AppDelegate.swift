@@ -27,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
       }
     FirebaseApp.configure()
+//        let arr = Bundle.main.object(forInfoDictionaryKey: "STR_ARR_TYPE_SEARCH")
+//    print(arr)
+        
+
     return true
     }
 
