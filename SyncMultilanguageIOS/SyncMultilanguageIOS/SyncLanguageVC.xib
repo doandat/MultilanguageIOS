@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SyncLanguageVC" customModule="SyncMultilanguageIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="veH-fm-b2T">
+                    <rect key="frame" x="0.0" y="252" width="393" height="348"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nf-GR-9GF" userLabel="English">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="sPs-qP-cnd"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="English"/>
+                            <connections>
+                                <action selector="actionEng:" destination="-1" eventType="touchUpInside" id="ZHc-mH-lS8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leP-Ub-F4d" userLabel="Vietnam">
+                            <rect key="frame" x="0.0" y="60" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="deu-v0-dIx"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Vietnamese"/>
+                            <connections>
+                                <action selector="actionVN:" destination="-1" eventType="touchUpInside" id="oKT-Gk-eBf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfq-cN-HCw">
+                            <rect key="frame" x="0.0" y="120" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="iaR-3z-mNV"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Thai"/>
+                            <connections>
+                                <action selector="actionThai:" destination="-1" eventType="touchUpInside" id="Fee-2E-mTu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMh-d7-H5W">
+                            <rect key="frame" x="0.0" y="180" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="kTC-D8-slb"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="TC"/>
+                            <connections>
+                                <action selector="actionTC:" destination="-1" eventType="touchUpInside" id="wfJ-Yq-aMj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSH-ZM-2gH">
+                            <rect key="frame" x="0.0" y="240" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Clk-Wb-Keu"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="SC"/>
+                            <connections>
+                                <action selector="actionSC:" destination="-1" eventType="touchUpInside" id="dSJ-1b-sIt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuX-s8-4yA">
+                            <rect key="frame" x="0.0" y="300" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="YaE-Td-DJg"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Read"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="veH-fm-b2T" secondAttribute="trailing" id="GSj-ST-s5g"/>
+                <constraint firstItem="veH-fm-b2T" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gdE-CG-Uza"/>
+                <constraint firstItem="veH-fm-b2T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ua2-PP-XZi"/>
+            </constraints>
+            <point key="canvasLocation" x="21" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
