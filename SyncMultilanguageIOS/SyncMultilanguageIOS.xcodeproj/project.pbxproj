@@ -22,6 +22,19 @@
 		EE4309605DD68FB9A8019FCF /* Pods_SyncMultilanguageIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0703EB81F68F6140700144F /* Pods_SyncMultilanguageIOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A928E6D02A0C950A00BD85CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1E3B539B5CF75BC1EF3826E7 /* Pods-SyncMultilanguageIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncMultilanguageIOS.debug.xcconfig"; path = "Target Support Files/Pods-SyncMultilanguageIOS/Pods-SyncMultilanguageIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3D018BA99648F69E0AA40C9D /* Pods-SyncMultilanguageIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncMultilanguageIOS.release.xcconfig"; path = "Target Support Files/Pods-SyncMultilanguageIOS/Pods-SyncMultilanguageIOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		A928E6C12A0B3B5F00BD85CD /* zh-Hant */ = {isa = PBXFileReference; explicitFileType = text; name = "zh-Hant"; path = "zh-Hant.lproj/BBLocalizable.strings"; sourceTree = "<group>"; };
 		A928E6C22A0B3D3B00BD85CD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A928E6CA2A0B9C7A00BD85CD /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		A928E6D12A0C952B00BD85CD /* SyncMultilanguageIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncMultilanguageIOS.entitlements; sourceTree = "<group>"; };
 		F0703EB81F68F6140700144F /* Pods_SyncMultilanguageIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyncMultilanguageIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +106,7 @@
 		A928E6932A0B279900BD85CD /* SyncMultilanguageIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A928E6D12A0C952B00BD85CD /* SyncMultilanguageIOS.entitlements */,
 				A928E6942A0B279900BD85CD /* AppDelegate.swift */,
 				A928E69D2A0B279B00BD85CD /* Assets.xcassets */,
 				A928E69F2A0B279B00BD85CD /* LaunchScreen.storyboard */,
@@ -129,6 +144,7 @@
 				A928E68E2A0B279900BD85CD /* Frameworks */,
 				A928E68F2A0B279900BD85CD /* Resources */,
 				F995DE97695EDCA3CB478F16 /* [CP] Embed Pods Frameworks */,
+				A928E6D02A0C950A00BD85CD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,9 +416,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyncMultilanguageIOS/SyncMultilanguageIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5J9CB2NJD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SyncMultilanguageIOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SyncMultilanguageIOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -410,6 +431,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,9 +451,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyncMultilanguageIOS/SyncMultilanguageIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5J9CB2NJD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SyncMultilanguageIOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SyncMultilanguageIOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -439,6 +466,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

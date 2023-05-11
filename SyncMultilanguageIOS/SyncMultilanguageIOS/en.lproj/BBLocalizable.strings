@@ -1,60 +1,12 @@
 "account_register_msg_email_notmatch_format" = "Your email account is not correct. (abc@gmail.com)";
 
-"account_register_msg_email_notmatch_format" = "Your email account is not correct. (abc@gmail.com)";
-
-"account_register_msg_required_empty_account" = "Please enter your account name";
-
-"account_register_msg_required_empty_account" = "Please enter your account name";
-
-"account_register_msg_required_empty_password" = "Please enter your password";
-
-"account_register_msg_required_empty_password" = "Please enter your password";
-
-"account_register_msg_required_empty_password_confirm" = "Please enter your confirm password";
-
-"account_register_msg_required_empty_password_confirm" = "Please enter your confirm password";
-
-"account_register_msg_required_meet_requirement" = "Please enter your password as required";
-
-"account_register_msg_required_meet_requirement" = "Please enter your password as required";
-
-"account_register_msg_required_password_not_match" = "Password and confirm password are not match";
-
-"account_register_msg_required_password_not_match" = "Password and confirm password are not match";
-
-"active_card_success" = "Activate card successfully";
-
 "active_card_success" = "Activate card successfully";
 
 "agree_to_loan" = "Agree";
-
-"agree_to_loan" = "Agree";
-
-"app_error_message" = "There is something wrong, please try again";
-
-"app_error_message" = "There is something wrong, please try again";
-
-"authentication.biometric.enable.confirm" = "Bật %@";
 
 "authentication.biometric.enable.later" = "Để sau";
 
-"authentication.biometric.method.face_id" = "xác thực bằng khuôn mặt";
-
-"authentication.biometric.method.touch_id" = "xác thực bằng vân tay";
-
-"authentication.biometric.pop_up.button.cancel" = "Hủy bỏ";
-
-"authentication.biometric.pop_up.guide" = "Thực hiện xác thực bằng sinh trắc học";
-
-"authentication.biometric.pop_up.subtitle" = "Vui lòng sử dụng %@ để đăng nhập";
-
-"authentication.biometric.pop_up.title" = "Xác thực sinh trắc học để đăng nhập";
-
-"authentication.otp.cancel" = "Cancel";
-
 "authentication.otp.error" = "OTP is not correct";
-
-"authentication.otp.resend" = "Resend OTP";
 
 "authentication.out_of_band.login.action.accept" = "Đồng ý";
 
@@ -64,257 +16,83 @@
 
 "authentication.passcode.title" = "Nhập mật mã";
 
-"authentication.password.button.forget" = "Forgot password?";
-
 "authentication.password.button.login" = "Login";
 
-"authentication.password.button.other_account" = "Không phải tôi";
-
-"authentication.password.button.register" = "Mở tài khoản online";
-
-"authentication.password.button.signup" = "New to SmartOSCbank";
-
-"authentication.password.field.password" = "Password";
-
-"authentication.password.field.username" = "UserName";
-
-"authentication.password.title.welcome" = "Chào mừng đến với ";
-
-"authentication.password.title.welcome_back" = "Xin chào, ";
-
-"auto_renew_setting" = "Auto renew settings";
-
-"auto_renew_setting" = "Auto renew settings";
-
 "beneficiary_account" = "Beneficiary account";
-
-"beneficiary_account" = "Beneficiary account";
-
-"beneficiary_bank" = "Beneficiary bank";
 
 "beneficiary_bank" = "Beneficiary bank";
 
 "beneficiary_name" = "Beneficiary name";
 
-"beneficiary_name" = "Beneficiary name";
-
-"bill_pay_confirmation_screen_customer_address_label" = "Address";
-
-"bill_pay_confirmation_screen_customer_address_label" = "Address";
-
 "bill_pay_confirmation_screen_customer_code_label" = "Customer ID";
-
-"bill_pay_confirmation_screen_customer_code_label" = "Customer ID";
-
-"bill_pay_confirmation_screen_customer_name_label" = "Customer name";
-
-"bill_pay_confirmation_screen_customer_name_label" = "Customer name";
-
-"bill_pay_confirmation_screen_payment_period_label" = "Payment period";
-
-"bill_pay_confirmation_screen_payment_period_label" = "Payment period";
-
-"bill_pay_confirmation_screen_payment_update_from_provider" = "Updated by provider";
-
-"bill_pay_confirmation_screen_payment_update_from_provider" = "Updated by provider";
-
-"bill_pay_confirmation_screen_transaction_amount_title" = "Amount";
 
 "bill_pay_confirmation_screen_transaction_amount_title" = "Amount";
 
 "bill_pay_home_add_service" = "Add new bill";
 
-"bill_pay_home_add_service" = "Add new bill";
-
 "bill_pay_home_own_bill" = "My bills";
-
-"bill_pay_home_own_bill" = "My bills";
-
-"bill_pay_home_title" = "Bills";
-
-"bill_pay_home_title" = "Bills";
-
-"biometric_face_id" = "authentication with face";
 
 "biometric_face_id" = "authentication with face";
 
 "biometric_face_id_detail" = "Easy login with face authentication";
 
-"biometric_face_id_detail" = "Easy login with face authentication";
-
-"biometric_prompt_subtitle" = "Biometric authentication with fingerprint or face";
-
-"biometric_prompt_subtitle" = "Biometric authentication with fingerprint or face";
-
-"biometric_touch_id" = "authentication with fingerprint";
-
 "biometric_touch_id" = "authentication with fingerprint";
 
 "biometric_touch_id_detail" = "Easy login with fignerprint authentication";
-
-"biometric_touch_id_detail" = "Easy login with fignerprint authentication";
-
-"bs_bio_guide" = "Touch to the fingerprint sensor";
-
-"bs_bio_guide" = "Touch to the fingerprint sensor";
-
-"bs_bio_sub_title" = "Please scan your fingerprint";
-
-"bs_bio_sub_title" = "Please scan your fingerprint";
-
-"bs_bio_title" = "Login by fingerprint";
-
-"bs_bio_title" = "Login by fingerprint";
-
-"bs_label_cancel" = "Cancel";
 
 "bs_label_cancel" = "Cancel";
 
 "button_label_create_new_transaction" = "Create new transaction";
 
-"button_label_create_new_transaction" = "Create new transaction";
-
 "card_activation_button_active" = "Activate card";
-
-"card_activation_button_active" = "Activate card";
-
-"card_activation_guide_to_input_cvv" = "Input number in backside of card";
 
 "card_activation_guide_to_input_cvv" = "Input number in backside of card";
 
 "card_activation_input_cvv" = "Input CVV";
 
-"card_activation_input_cvv" = "Input CVV";
-
-"card_detail_availability_limit" = "Availability limit";
-
-"card_detail_availability_limit" = "Availability limit";
-
-"card_detail_card_account" = "Card account";
-
-"card_detail_card_account" = "Card account";
-
 "card_detail_current_outstanding_balance" = "Current outstanding balance";
-
-"card_detail_current_outstanding_balance" = "Current outstanding balance";
-
-"card_detail_guide_safe_payment" = "Instructions for safe card transactions";
-
-"card_detail_guide_safe_payment" = "Instructions for safe card transactions";
-
-"card_detail_history_transaction" = "Transaction history";
 
 "card_detail_history_transaction" = "Transaction history";
 
 "card_detail_limit_granted" = "Limit granted";
 
-"card_detail_limit_granted" = "Limit granted";
-
 "card_detail_pay_off_outstanding_balance" = "Payoff outstanding balance";
-
-"card_detail_pay_off_outstanding_balance" = "Payoff outstanding balance";
-
-"card_detail_transaction_statement" = "Show transaction statement";
 
 "card_detail_transaction_statement" = "Show transaction statement";
 
 "card_information" = "Card information";
 
-"card_information" = "Card information";
-
 "card_label_atm_withdraw" = "Amount must be a multiple of 50.000 VND. You can withdraw up to 5 million VND per transaction and 30 million VND per day.";
-
-"card_label_atm_withdraw" = "Amount must be a multiple of 50.000 VND. You can withdraw up to 5 million VND per transaction and 30 million VND per day.";
-
-"card_request_valid_cvv" = "Please input valid CVV number";
-
-"card_request_valid_cvv" = "Please input valid CVV number";
-
-"card_service" = "Card services";
 
 "card_service" = "Card services";
 
 "category_bills_utilities" = "Bills Utilities";
 
-"category_bills_utilities" = "Bills Utilities";
-
 "category_credit_card_payment" = "Credit Card Payment";
-
-"category_credit_card_payment" = "Credit Card Payment";
-
-"category_food_drinks" = "Food Drinks";
 
 "category_food_drinks" = "Food Drinks";
 
 "category_health_beauty" = "Health Beauty";
 
-"category_health_beauty" = "Health Beauty";
-
 "category_hobbies_entertainment" = "Hobbies Entertainment";
-
-"category_hobbies_entertainment" = "Hobbies Entertainment";
-
-"category_home" = "Home";
 
 "category_home" = "Home";
 
 "category_income" = "Income";
 
-"category_income" = "Income";
-
 "category_other_income" = "Other Income";
-
-"category_other_income" = "Other Income";
-
-"category_retirement_saving" = "Retirement Saving";
 
 "category_retirement_saving" = "Retirement Saving";
 
 "category_shopping" = "Shopping";
 
-"category_shopping" = "Shopping";
-
 "category_transfers" = "Transfers";
-
-"category_transfers" = "Transfers";
-
-"category_transportation" = "Transportation";
 
 "category_transportation" = "Transportation";
 
 "category_uncategorised" = "Uncategorised";
 
-"category_uncategorised" = "Uncategorised";
-
-"cdDriveLicenseBtnTitle" = "Giấy phép lái xe";
-
-"cdIdCardBtnTitle" = "CMND/CCCD";
-
-"cdPassportBtnTitle" = "Passport";
-
-"cdTitle" = "Vui lòng lựa chọn loại giấy tờ tùy thân để xác thực thông tin";
-
 "change_password_label" = "Change password";
-
-"change_password_label" = "Change password";
-
-"change_password_label_button" = "Change password";
-
-"change_password_label_button" = "Change password";
-
-"change_password_success" = "Change password successfully";
-
-"change_password_success" = "Change password successfully";
-
-"close" = "Close";
-
-"close" = "Close";
-
-"common_lorem" = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
-print, graphic or web designs.";
-
-"common_lorem" = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
-print, graphic or web designs.";
 
 "commonAlertButton" = "Close";
 
@@ -322,107 +100,23 @@ print, graphic or web designs.";
 
 "commonAlertTitle" = "Notice";
 
-"content" = "Description";
-
-"content" = "Description";
-
 "current_device_active" = "Active";
 
-"current_device_active" = "Active";
-
-"current_device_disable" = "Disable";
-
-"current_device_disable" = "Disable";
-
 "days" = "Days";
-
-"days" = "Days";
-
-"dcBackSideContentTitle" = "Vui lòng căn chỉnh vị trí ảnh vào trong khung, đảm bảo ảnh chụp rõ nét, không bị lóa, mờ.";
 
 "dcBackSideHeaderTitle" = "Chụp ảnh mặt sau";
 
-"dcBackSideNextBtnTitle" = "Tiếp tục";
-
-"dcBackSideReCaptureBtnTitle" = "Chụp lại";
-
-"dcConfirmContentTitle" = "Bạn có chắc muốn sử dụng ảnh này để xác minh?";
-
-"dcFontSideContentTitle" = "Vui lòng căn chỉnh vị trí ảnh vào trong khung, đảm bảo ảnh chụp rõ nét, không bị lóa, mờ.";
-
 "dcFontSideHeaderTitle" = "Chụp ảnh mặt trước";
 
-"dcFontSideNextBtnTitle" = "Tiếp tục";
-
-"dcFontSideReCaptureBtnTitle" = "Chụp lại";
-
 "devices_managemen_label_revoke_device" = "Revoke";
-
-"devices_managemen_label_revoke_device" = "Revoke";
-
-"devices_management_label_history" = "Logged in history";
 
 "devices_management_label_history" = "Logged in history";
 
 "devices_management_label_login_in_current_device" = "You are currently in another device";
 
-"devices_management_label_login_in_current_device" = "You are currently in another device";
-
-"devices_management_nav_label" = "Devices management";
-
-"devices_management_nav_label" = "Devices management";
-
-"enter_passcode" = "Enter passode for authentication";
-
-"enter_passcode" = "Enter passode for authentication";
-
-"error_mess_current_password_invalid" = "Current password is wrong, please check again";
-
-"error_mess_current_password_invalid" = "Current password is wrong, please check again";
-
-"feature_in_development" = "Feature in develop";
-
-"feature_in_development" = "Feature in develop";
-
-"forgot_pass_entered_otp_failure" = "The number of retries has been exceed. Please try again in 1 minute";
-
-"forgot_pass_entered_otp_failure" = "The number of retries has been exceed. Please try again in 1 minute";
-
-"forgot_pass_resend_otp_success" = "Send OTP successfully";
-
-"forgot_pass_resend_otp_success" = "Send OTP successfully";
-
-"forgot_password_label" = "Forgot password";
-
-"forgot_password_label" = "Forgot password";
-
 "from_account" = "From account";
 
-"from_account" = "From account";
-
-"home.account.select" = "Account list";
-
-"home.menu.bill" = "Bills";
-
-"home.menu.card" = "Card management";
-
-"home.menu.loan" = "Loan";
-
-"home.menu.more" = "More";
-
-"home.menu.saving" = "Saving";
-
-"home.menu.topup" = "Topup";
-
-"home.menu.transfer" = "Transfer";
-
-"home.title.welcome" = "Welcome";
-
 "home_label_account_payment" = "Current account";
-
-"home_label_account_payment" = "Current account";
-
-"home_label_list_account" = "All accounts";
 
 "home_label_list_account" = "All accounts";
 
@@ -432,1526 +126,437 @@ print, graphic or web designs.";
 
 "imageTooDark" = "Photo is too dark";
 
-"imagetooGlare" = "Photo is glare";
-
 "income_per_category" = "Income per category";
-
-"income_per_category" = "Income per category";
-
-"labal_start" = "Start";
-
-"labal_start" = "Start";
-
-"label_account" = "Account:";
 
 "label_account" = "Account:";
 
 "label_account_information" = "Account information";
 
-"label_account_information" = "Account information";
-
 "label_account_name" = "Account name";
-
-"label_account_name" = "Account name";
-
-"label_account_type" = "Account type";
-
-"label_account_type" = "Account type";
-
-"label_accured_interest" = "Accrued interest";
 
 "label_accured_interest" = "Accrued interest";
 
 "label_active_card" = "active card";
 
-"label_active_card" = "active card";
-
 "label_add_budgets" = "Add budgets";
-
-"label_add_budgets" = "Add budgets";
-
-"label_address" = "Address";
-
-"label_address" = "Address";
-
-"label_all" = "All";
 
 "label_all" = "All";
 
 "label_all_your_budgets" = "All your budgets";
 
-"label_all_your_budgets" = "All your budgets";
-
-"label_amount_error_min" = "Amount is required";
-
-"label_amount_error_min" = "Amount is required";
-
-"label_amount_transaction" = "Transaction amount";
-
-"label_amount_transaction" = "Transaction amount";
-
 "label_are_you_agree" = "Are you agree?";
-
-"label_are_you_agree" = "Are you agree?";
-
-"label_authentication" = "Authentication";
-
-"label_authentication" = "Authentication";
-
-"label_authentication_by_passcode" = "Authentication by Passcode";
-
-"label_authentication_by_passcode" = "Authentication by Passcode";
-
-"label_available_balance" = "Available balance";
 
 "label_available_balance" = "Available balance";
 
 "label_available_balance_total" = "Available balance total";
 
-"label_available_balance_total" = "Available balance total";
-
 "label_available_limit" = "Available limit";
-
-"label_available_limit" = "Available limit";
-
-"label_balance" = "Balance";
 
 "label_balance" = "Balance";
 
 "label_begin_managing_your_budget" = "Begin managing your budget by choosing a category.";
 
-"label_begin_managing_your_budget" = "Begin managing your budget by choosing a category.";
-
 "label_bill" = "Bill";
-
-"label_bill" = "Bill";
-
-"label_billpay_electric" = "Electricity bill";
-
-"label_billpay_electric" = "Electricity bill";
-
-"label_bills" = "Pay bills";
 
 "label_bills" = "Pay bills";
 
 "label_book_an_appointment" = "Book an appointment";
 
-"label_book_an_appointment" = "Book an appointment";
-
 "label_budget" = "Budget";
-
-"label_budget" = "Budget";
-
-"label_budget_delete" = "Delete budget";
 
 "label_budget_delete" = "Delete budget";
 
 "label_budget_edit_amount" = "Edit amount";
 
-"label_budget_edit_amount" = "Edit amount";
-
 "label_budget_limt" = "Budget limit";
-
-"label_budget_limt" = "Budget limit";
-
-"label_call" = "Call";
 
 "label_call" = "Call";
 
 "label_cash_flow" = "Cash flow";
 
-"label_cash_flow" = "Cash flow";
-
 "label_choose_a_monthly_budget" = "Choose a monthly budget";
-
-"label_choose_a_monthly_budget" = "Choose a monthly budget";
-
-"label_choose_service_provider" = "Choose service provider";
-
-"label_choose_service_provider" = "Choose service provider";
-
-"label_confirm_new_password" = "Confirm new password";
 
 "label_confirm_new_password" = "Confirm new password";
 
 "label_confirm_payment" = "Confirm payment";
 
-"label_confirm_payment" = "Confirm payment";
-
-"label_confirm_payment_info" = "Payment confirmation";
-
-"label_confirm_payment_info" = "Payment confirmation";
-
 "label_confirm_settlement" = "Confirm payment";
-
-"label_confirm_settlement" = "Confirm payment";
-
-"label_confirm_transaction" = "Confirm transaction";
 
 "label_confirm_transaction" = "Confirm transaction";
 
 "label_contact_us" = "Contact us";
 
-"label_contact_us" = "Contact us";
-
 "label_contract_code" = "Loan contract ID";
-
-"label_contract_code" = "Loan contract ID";
-
-"label_create_account" = "New to SmartOSCbank";
 
 "label_create_account" = "New to SmartOSCbank";
 
 "label_create_budget" = "Create budget";
 
-"label_create_budget" = "Create budget";
-
 "label_create_new_passcode" = "Create your new passcode";
-
-"label_create_new_passcode" = "Create your new passcode";
-
-"label_current_password" = "Current password";
 
 "label_current_password" = "Current password";
 
 "label_customer" = "Customer";
 
-"label_customer" = "Customer";
-
-"label_customer_code" = "Customer code";
-
-"label_customer_code" = "Customer code";
-
 "label_customer_id" = "Customer Id";
-
-"label_customer_id" = "Customer Id";
-
-"label_customer_name" = "Customer name";
 
 "label_customer_name" = "Customer name";
 
 "label_day_start_loan" = "Loan originated";
 
-"label_day_start_loan" = "Loan originated";
-
-"label_description_transfer_limit" = "The daily transfer limit does not apply to transfer transactions between your accounts.";
-
 "label_description_transfer_limit" = "The daily transfer limit does not apply to transfer transactions between your accounts.";
 
 "label_detail" = "Detail";
-
-"label_detail" = "Detail";
-
-"label_detail_account" = "Detail Account";
-
-"label_detail_account" = "Detail Account";
-
-"label_detail_transaction" = "Detail transaction";
 
 "label_detail_transaction" = "Detail transaction";
 
 "label_disbursement_account" = "Disbursement account";
 
-"label_disbursement_account" = "Disbursement account";
-
 "label_do_you_want_delete_budget" = "Do you want to delete this budget?";
-
-"label_do_you_want_delete_budget" = "Do you want to delete this budget?";
-
-"label_dob" = "Date of birth";
-
-"label_dob" = "Date of birth";
-
-"label_edit_budget_amount" = "Edit budget amount";
 
 "label_edit_budget_amount" = "Edit budget amount";
 
 "label_edit_the_month_budget" = "Edit the monthly budget";
 
-"label_edit_the_month_budget" = "Edit the monthly budget";
-
-"label_electricity_bill" = "Electricity Bill";
-
-"label_electricity_bill" = "Electricity Bill";
-
 "label_email" = "Email";
-
-"label_email" = "Email";
-
-"label_enable_fingerprint" = "Enable fingerprint authentication";
 
 "label_enable_fingerprint" = "Enable fingerprint authentication";
 
 "label_enable_fingerprint_content" = "Easy login with fingerprint authentication";
 
-"label_enable_fingerprint_content" = "Easy login with fingerprint authentication";
-
 "label_enable_later" = "Later";
-
-"label_enable_later" = "Later";
-
-"label_end" = "End";
 
 "label_end" = "End";
 
 "label_enter_passcode" = "Enter your passcode";
 
-"label_enter_passcode" = "Enter your passcode";
-
-"label_enter_your_budget_limit" = "Enter your budget limit";
-
 "label_enter_your_budget_limit" = "Enter your budget limit";
 
 "label_exchange_rate" = "Exchange rate";
 
-"label_exchange_rate" = "Exchange rate";
-
-"label_exit_app" = "Press back again to exit";
-
-"label_exit_app" = "Press back again to exit";
-
 "label_expired_date" = "Expired date";
-
-"label_expired_date" = "Expired date";
-
-"label_feature_in_progress" = "Feature in progress. Please comeback later.";
-
-"label_feature_in_progress" = "Feature in progress. Please comeback later.";
-
-"label_fee" = "Fee";
 
 "label_fee" = "Fee";
 
 "label_find_branch_and_atm" = "Find branches & ATMs on map";
 
-"label_find_branch_and_atm" = "Find branches & ATMs on map";
-
 "label_forgot_passcode" = "Forgot passcode ?";
-
-"label_forgot_passcode" = "Forgot passcode ?";
-
-"label_forgot_password" = "Forgot password?";
 
 "label_forgot_password" = "Forgot password?";
 
 "label_from" = "From";
 
-"label_from" = "From";
-
 "label_from_account" = "From";
-
-"label_from_account" = "From";
-
-"label_gender" = "Gender";
-
-"label_gender" = "Gender";
-
-"label_help_and_support" = "Help & support";
 
 "label_help_and_support" = "Help & support";
 
 "label_hide_money" = "Hide number";
 
-"label_hide_money" = "Hide number";
-
 "label_hotline" = "SmartOSC hotline";
-
-"label_hotline" = "SmartOSC hotline";
-
-"label_identity" = "ID Card/ Citizen ID Card";
-
-"label_identity" = "ID Card/ Citizen ID Card";
-
-"label_income" = "Income";
 
 "label_income" = "Income";
 
 "label_incoming" = "Incoming";
 
-"label_incoming" = "Incoming";
-
-"label_input_current_password" = "Enter current password";
-
-"label_input_current_password" = "Enter current password";
-
-"label_input_customer_code" = "Input customer code";
-
-"label_input_customer_code" = "Input customer code";
-
-"label_input_email" = "Input email";
-
-"label_input_email" = "Input email";
-
-"label_input_identity" = "Input your ID Card/ Citizen ID Card";
-
-"label_input_identity" = "Input your ID Card/ Citizen ID Card";
-
-"label_input_issuing_date" = "Input issuing place";
-
-"label_input_issuing_date" = "Input issuing place";
-
-"label_input_new_password" = "Enter new password";
-
-"label_input_new_password" = "Enter new password";
-
-"label_input_onboarding_address" = "Input address";
-
-"label_input_onboarding_address" = "Input address";
-
-"label_input_phone_number" = "Input phone number";
-
-"label_input_phone_number" = "Input phone number";
-
-"label_interest_amount" = "Interest amount";
-
-"label_interest_amount" = "Interest amount";
-
 "label_interest_debt" = "Interest debt";
-
-"label_interest_debt" = "Interest debt";
-
-"label_interest_rate" = "Interest rate";
 
 "label_interest_rate" = "Interest rate";
 
 "label_issuing_date" = "Issuing date";
 
-"label_issuing_date" = "Issuing date";
-
-"label_issuing_place" = "Issuing place";
-
-"label_issuing_place" = "Issuing place";
-
 "label_loan" = "Loan";
-
-"label_loan" = "Loan";
-
-"label_loan_account" = "Loan account";
 
 "label_loan_account" = "Loan account";
 
 "label_loan_due_balance" = "Due balance";
 
-"label_loan_due_balance" = "Due balance";
-
-"label_loan_due_date" = "Due date";
-
 "label_loan_due_date" = "Due date";
 
 "label_loan_info_date_of_maturity" = "Date of maturity:";
-
-"label_loan_info_date_of_maturity" = "Date of maturity:";
-
-"label_loan_info_due_balance" = "Due balance";
-
-"label_loan_info_due_balance" = "Due balance";
-
-"label_loan_information" = "Information";
 
 "label_loan_information" = "Information";
 
 "label_loan_int" = "Int.";
 
-"label_loan_int" = "Int.";
-
-"label_loan_interest" = "Loan interest";
-
-"label_loan_interest" = "Loan interest";
-
 "label_loan_prin" = "Print.";
-
-"label_loan_prin" = "Print.";
-
-"label_loan_schedule_amount_detail" = "Details";
 
 "label_loan_schedule_amount_detail" = "Details";
 
 "label_loan_schedule_loan_balance" = "Loan balance";
 
-"label_loan_schedule_loan_balance" = "Loan balance";
-
 "label_loan_schedule_payment_total" = "Payment";
-
-"label_loan_schedule_payment_total" = "Payment";
-
-"label_loan_schedule_period_total" = "Period";
 
 "label_loan_schedule_period_total" = "Period";
 
 "label_loan_term" = "Loan term";
 
-"label_loan_term" = "Loan term";
-
-"label_loans" = "loans";
-
 "label_loans" = "loans";
 
 "label_login" = "Login";
 
-"label_login" = "Login";
-
-"label_login_success" = "Logged in successfully";
-
-"label_login_success" = "Logged in successfully";
-
 "label_login_user_name" = "Username";
-
-"label_login_user_name" = "Username";
-
-"label_manage_device_info" = "Only one device canbe active at a time. To use the app on another device, revoke your current one before logging into a new device.";
-
-"label_manage_device_info" = "Only one device canbe active at a time. To use the app on another device, revoke your current one before logging into a new device.";
-
-"label_manage_devices" = "Manage devices";
 
 "label_manage_devices" = "Manage devices";
 
 "label_maturity_date" = "Loan maturity";
 
-"label_maturity_date" = "Loan maturity";
-
 "label_message" = "Message";
-
-"label_message" = "Message";
-
-"label_more" = "More";
 
 "label_more" = "More";
 
 "label_my_account" = "My account";
 
-"label_my_account" = "My account";
-
 "label_my_accounts" = "My accounts";
-
-"label_my_accounts" = "My accounts";
-
-"label_my_contact" = "My contact";
 
 "label_my_contact" = "My contact";
 
 "label_name" = "Name";
 
-"label_name" = "Name";
-
 "label_new_password" = "New password";
-
-"label_new_password" = "New password";
-
-"label_next" = "Next";
 
 "label_next" = "Next";
 
 "label_not_me" = "Not me";
 
-"label_not_me" = "Not me";
-
-"label_noti" = "Notification";
-
-"label_noti" = "Notification";
-
-"label_notification" = "Announcement";
-
-"label_notification" = "Announcement";
-
-"label_onboarding_address" = "Address";
-
-"label_onboarding_address" = "Address";
-
-"label_onboarding_district" = "District";
-
-"label_onboarding_district" = "District";
-
-"label_onboarding_input_province" = "Select province/ city";
-
-"label_onboarding_input_province" = "Select province/ city";
-
-"label_onboarding_list_service_register" = "List of subscription services";
-
-"label_onboarding_list_service_register" = "List of subscription services";
-
-"label_onboarding_permanent_address" = "Permanent address";
-
-"label_onboarding_permanent_address" = "Permanent address";
-
-"label_onboarding_province" = "Province/ City";
-
-"label_onboarding_province" = "Province/ City";
-
-"label_onboarding_referral_code" = "Referral code (if any)";
-
-"label_onboarding_referral_code" = "Referral code (if any)";
-
-"label_onboarding_register_account" = "Register an account";
-
-"label_onboarding_register_account" = "Register an account";
-
-"label_onboarding_select_district" = "Select district";
-
-"label_onboarding_select_district" = "Select district";
-
-"label_onboarding_select_service" = "Selection of products & services";
-
-"label_onboarding_select_service" = "Selection of products & services";
-
-"label_onboarding_select_transaction_branch" = "Select transaction branch";
-
-"label_onboarding_select_transaction_branch" = "Select transaction branch";
-
-"label_onboarding_select_ward" = "Select ward";
-
-"label_onboarding_select_ward" = "Select ward";
-
-"label_onboarding_term" = "Terms & Conditions";
-
-"label_onboarding_term" = "Terms & Conditions";
-
-"label_onboarding_ward" = "Ward";
-
-"label_onboarding_ward" = "Ward";
-
-"label_one_time" = "One time";
-
-"label_one_time" = "One time";
-
 "label_open_account_2" = "Open account";
 
-"label_open_account_2" = "Open account";
-
-"label_open_account_online" = "Open an account online";
-
-"label_open_account_online" = "Open an account online";
-
-"label_open_branch" = "Open branch";
-
-"label_open_branch" = "Open branch";
-
-"label_open_date" = "Open date";
-
-"label_open_date" = "Open date";
-
 "label_open_new_account" = "Open new account";
-
-"label_open_new_account" = "Open new account";
-
-"label_open_your_desirable_account_rapidly" = "Open your desirable account rapidly";
-
-"label_open_your_desirable_account_rapidly" = "Open your desirable account rapidly";
-
-"label_out_going" = "Out going";
 
 "label_out_going" = "Out going";
 
 "label_outstanding_balance" = "Outstanding balance";
 
-"label_outstanding_balance" = "Outstanding balance";
-
-"label_overdue_interest_debt" = "Overdue interest debt (If have)";
-
-"label_overdue_interest_debt" = "Overdue interest debt (If have)";
-
-"label_paid_amount" = "Paid amount";
-
-"label_paid_amount" = "Paid amount";
-
-"label_passcode_entered_incorrect" = "Passcode entered incorrectly. Please try again";
-
 "label_passcode_entered_incorrect" = "Passcode entered incorrectly. Please try again";
 
 "label_password" = "Password";
-
-"label_password" = "Password";
-
-"label_pay_electricity_bill" = "Pay Electricity bill";
-
-"label_pay_electricity_bill" = "Pay Electricity bill";
 
 "label_pay_off_your_credit_card_balance" = "Pay off your credit card balance";
 
 "label_payment" = "Payment";
 
-"label_payment" = "Payment";
-
-"label_payment_amount" = "Payment amount";
-
-"label_payment_amount" = "Payment amount";
-
-"label_payment_due_date" = "Payment due date";
-
-"label_payment_due_date" = "Payment due date";
-
 "label_payment_history" = "Payment history";
-
-"label_payment_history" = "Payment history";
-
-"label_payment_loan_interest_debt" = "Interest debt";
-
-"label_payment_loan_interest_debt" = "Interest debt";
-
-"label_payment_loan_principal_amount" = "Principal amount";
-
-"label_payment_loan_principal_amount" = "Principal amount";
-
-"label_payment_now" = "Payment now";
 
 "label_payment_now" = "Payment now";
 
 "label_payment_period" = "Period";
 
-"label_payment_period" = "Period";
-
-"label_payment_services" = "Payment services";
-
-"label_payment_services" = "Payment services";
-
 "label_payment_template" = "Payment template";
-
-"label_payment_template" = "Payment template";
-
-"label_personal_finance_management" = "Personal finance management";
 
 "label_personal_finance_management" = "Personal finance management";
 
 "label_phone_number" = "Phone number";
 
-"label_phone_number" = "Phone number";
-
-"label_principal_amount" = "Principal amount";
-
-"label_principal_amount" = "Principal amount";
-
-"label_principal_balance" = "Principal balance";
-
 "label_principal_balance" = "Principal balance";
 
 "label_principal_debt" = "Principal debt";
 
-"label_principal_debt" = "Principal debt";
-
-"label_principal_debt_detail_loan" = "Principal debt";
-
-"label_principal_debt_detail_loan" = "Principal debt";
-
-"label_provider" = "Provider";
-
-"label_provider" = "Provider";
-
-"label_quick_loan_content" = "Exclusive program for SmartOSC bank is loyal customers";
-
-"label_quick_loan_content" = "Exclusive program for SmartOSC bank is loyal customers";
-
-"label_quick_loan_quick_money" = "Quick loan - Quick money";
-
-"label_quick_loan_quick_money" = "Quick loan - Quick money";
-
 "label_re_enter_passcode" = "Re-enter passcode";
-
-"label_re_enter_passcode" = "Re-enter passcode";
-
-"label_reenter_password" = "Re-enter the password";
-
-"label_reenter_password" = "Re-enter the password";
-
-/*
-  Localizable.strings
-  SMFeKYC
-
-  Created by AnhLe on 08/07/2021.
-  
-*/
-"label_register_bimometric" = "Enable %@";
 
 "label_register_bimometric" = "Enable %@";
 
 "label_register_finger_print" = "Register fingerprint";
 
-"label_register_finger_print" = "Register fingerprint";
-
 "label_repayment_schedule" = "Repayment schedule";
-
-"label_repayment_schedule" = "Repayment schedule";
-
-"label_repayment_term" = "Repayment date";
 
 "label_repayment_term" = "Repayment date";
 
 "label_request_loan" = "Request loan";
 
-"label_request_loan" = "Request loan";
-
 "label_save_customer_info" = "Save the bill for next payment";
-
-"label_save_customer_info" = "Save the bill for next payment";
-
-"label_saving_amount_total" = "Saving amount total";
 
 "label_saving_amount_total" = "Saving amount total";
 
 "label_schedule_transfer" = "Scheduled transfer";
 
-"label_schedule_transfer" = "Scheduled transfer";
-
 "label_security_guide" = "Security guide";
 
-"label_security_guide" = "Security guide";
-
-"label_select_gender" = "Select gender";
-
-"label_select_gender" = "Select gender";
-
-"label_select_identity_type" = "Choose the type of identification";
-
-"label_select_identity_type" = "Choose the type of identification";
-
 "label_select_your_budget_category" = "Select your budget category";
-
-"label_select_your_budget_category" = "Select your budget category";
-
-"label_service_not_support" = "Service not support";
-
-"label_service_not_support" = "Service not support";
-
-"label_service_provider" = "Service provider";
-
-"label_service_provider" = "Service provider";
-
-"label_set_as_default_account" = "Set as default account";
 
 "label_set_as_default_account" = "Set as default account";
 
 "label_set_your_budget_limit" = "Set your budget limit";
 
-"label_set_your_budget_limit" = "Set your budget limit";
-
 "label_setting" = "Setting";
-
-"label_setting" = "Setting";
-
-"label_setting_balance_noti" = "Balance notification";
 
 "label_setting_balance_noti" = "Balance notification";
 
 "label_setting_change_passcode" = "Change passcode";
 
-"label_setting_change_passcode" = "Change passcode";
-
 "label_setting_change_password" = "Change password";
-
-"label_setting_change_password" = "Change password";
-
-"label_setting_dark_mode" = "Change to dark mode";
 
 "label_setting_dark_mode" = "Change to dark mode";
 
 "label_setting_link_account" = "Link phone number to account";
 
-"label_setting_link_account" = "Link phone number to account";
-
 "label_setting_transfer_limit" = "Set transfer limit";
-
-"label_setting_transfer_limit" = "Set transfer limit";
-
-"label_settlement" = "Settlement";
 
 "label_settlement" = "Settlement";
 
 "label_short_currency" = "M";
 
-"label_short_currency" = "M";
-
 "label_spend" = "Spend";
-
-"label_spend" = "Spend";
-
-"label_spend_over" = "Over %@";
 
 "label_spend_over" = "Over %@";
 
 "label_spend_per" = "Spend %@ per %@";
 
-"label_spend_per" = "Spend %@ per %@";
-
 "label_status_paid" = "Paid";
-
-"label_status_paid" = "Paid";
-
-"label_status_undue" = "Undue";
-
-"label_status_undue" = "Undue";
-
-"label_status_unpaid" = "Unpaid";
 
 "label_status_unpaid" = "Unpaid";
 
 "label_target" = "target";
 
-"label_target" = "target";
-
 "label_term_deposit" = "Term deposit";
-
-"label_term_deposit" = "Term deposit";
-
-"label_term_deposit_name" = "term deposit";
 
 "label_term_deposit_name" = "term deposit";
 
 "label_to" = "to";
 
-"label_to" = "to";
-
 "label_to_account" = "To";
-
-"label_to_account" = "To";
-
-"label_total_amount" = "Total amount";
 
 "label_total_amount" = "Total amount";
 
 "label_total_income" = "Total income";
 
-"label_total_income" = "Total income";
-
-"label_total_loan_balance" = "Total loan balance";
-
-"label_total_loan_balance" = "Total loan balance";
-
 "label_total_spend" = "Total:";
-
-"label_total_spend" = "Total:";
-
-"label_total_spending" = "Total spending";
 
 "label_total_spending" = "Total spending";
 
 "label_transaction" = "transaction";
 
-"label_transaction" = "transaction";
-
-"label_transaction_code" = "Transaction code";
-
-"label_transaction_code" = "Transaction code";
-
-"label_transaction_history" = "Transaction history";
-
-"label_transaction_history" = "Transaction history";
-
-"label_transaction_id" = "Transaction ID";
-
 "label_transaction_id" = "Transaction ID";
 
 "label_transaction_income" = "In";
-
-"label_transaction_income" = "In";
-
-"label_transaction_note" = "Description";
-
-"label_transaction_note" = "Description";
-
-"label_transaction_outcome" = "Out";
 
 "label_transaction_outcome" = "Out";
 
 "label_transaction_pending" = "Transaction pending";
 
-"label_transaction_pending" = "Transaction pending";
-
 "label_transaction_status" = "Status";
-
-"label_transaction_status" = "Status";
-
-"label_transaction_time" = "Transaction time";
-
-"label_transaction_time" = "Transaction time";
-
-"label_transaction_type" = "Type";
-
-"label_transaction_type" = "Type";
 
 "label_transfer_money" = "Transfer";
 
-"label_transfer_money" = "Transfer";
-
-"label_transferred_content" = "You have transferred %@ today";
-
-"label_transferred_content" = "You have transferred %@ today";
-
 "label_update" = "Update";
 
-"label_update" = "Update";
-
-"label_update_from_provider" = "Update from provider";
-
-"label_update_from_provider" = "Update from provider";
-
 "label_user_guide" = "User guide";
-
-"label_user_guide" = "User guide";
-
-"label_verify_personal_information" = "Verify personal information";
-
-"label_verify_personal_information" = "Verify personal information";
-
-"label_view_detail" = "View detail";
 
 "label_view_detail" = "View detail";
 
 "label_view_loan_contract" = "View loan contract";
 
-"label_view_loan_contract" = "View loan contract";
-
 "label_withdraw" = "Withdrawal money at the ATM";
-
-"label_withdraw" = "Withdrawal money at the ATM";
-
-"label_withdraw_atm" = "Request withdrawal at ATM";
-
-"label_withdraw_atm" = "Request withdrawal at ATM";
-
-"label_you_confirm_withdraw" = "you confirm withdrawal";
-
-"label_you_confirm_withdraw" = "you confirm withdrawal";
 
 "lable_transfer_limit" = "Transfer limit";
 
-"lable_transfer_limit" = "Transfer limit";
-
-"loan_confirmation_label_confirm" = "Loan confirmation";
-
-"loan_confirmation_label_confirm" = "Loan confirmation";
-
-"loan_create_detail_term_and_condition" = "Loans terms and conditions";
-
-"loan_create_detail_term_and_condition" = "Loans terms and conditions";
-
 "loan_create_label_disbursement_account" = "Loan disbursement";
-
-"loan_create_label_disbursement_account" = "Loan disbursement";
-
-"loan_create_nav_label" = "Create new loan";
-
-"loan_create_nav_label" = "Create new loan";
 
 "loan_labal_create_loan_success" = "Apply a new loan";
 
-"loan_labal_create_loan_success" = "Apply a new loan";
-
-"loan_label_create_loan_failure" = "Apply loan unsuccessfully, please try again later";
-
-"loan_label_create_loan_failure" = "Apply loan unsuccessfully, please try again later";
-
 "loan_management_label_loan_product" = "Products";
-
-"loan_management_label_loan_product" = "Products";
-
-"loan_management_label_loan_term" = "Loan term";
-
-"loan_management_label_loan_term" = "Loan term";
-
-"loan_management_label_month_payment_date" = "Monthly repayment date";
 
 "loan_management_label_month_payment_date" = "Monthly repayment date";
 
 "loan_management_label_quick_loan" = "Quick loan SmartOSC";
 
-"loan_management_label_quick_loan" = "Quick loan SmartOSC";
-
-"loan_one_month" = "1 month";
-
-"loan_one_month" = "1 month";
-
-"loan_service_term_text" = "By clicking Agree to borrow, you confirm your agreement to the SmartOSC Loans terms and conditions";
-
 "loan_service_term_text" = "By clicking Agree to borrow, you confirm your agreement to the SmartOSC Loans terms and conditions";
 
 "loan_slider_label_loan_amount" = "Initial loan amount";
 
-"loan_slider_label_loan_amount" = "Initial loan amount";
-
-"loan_three_month" = "3 months";
-
-"loan_three_month" = "3 months";
-
-"loan_two_month" = "2 months";
-
-"loan_two_month" = "2 months";
-
-"login_can_not_regconize_finger_print_label" = "Cannot recognise fingerprint";
-
-"login_can_not_regconize_finger_print_label" = "Cannot recognise fingerprint";
-
-"login_regconize_finger_print_success_label" = "Fingerprint verified successfully";
-
-"login_regconize_finger_print_success_label" = "Fingerprint verified successfully";
-
-"login_welcome_label" = "[en]";
-
-"login_welcome_label" = "[en]";
-
 "menu_button_add_category" = "Add category";
-
-"menu_button_add_category" = "Add category";
-
-"menu_button_go_to_home" = "Home";
-
-"menu_button_go_to_home" = "Home";
-
-"menu_button_save_image" = "Save image";
-
-"menu_button_save_image" = "Save image";
-
-"menu_button_save_template" = "Save template";
 
 "menu_button_save_template" = "Save template";
 
 "menu_button_share_image" = "Share";
 
-"menu_button_share_image" = "Share";
-
-"menu_button_spent_management" = "Spent management";
-
-"menu_button_spent_management" = "Spent management";
-
-"menu_button_top_up" = "Top up";
-
-"menu_button_top_up" = "Top up";
-
-"menu_button_transfer_again" = "Transfer again";
-
-"menu_button_transfer_again" = "Transfer again";
-
 "menu_lb_home" = "Home";
-
-"menu_lb_home" = "Home";
-
-"menu_lb_settings" = "Setting";
 
 "menu_lb_settings" = "Setting";
 
 "menu_lb_transfer_money" = "Move money";
 
-"menu_lb_transfer_money" = "Move money";
-
 "message_no_internet" = "There is no internet connection";
-
-"message_no_internet" = "There is no internet connection";
-
-"million" = "mil";
-
-"million" = "mil";
-
-"money_transfer_form" = "Template";
 
 "money_transfer_form" = "Template";
 
 "money_transfer_form_description" = "Please enter your name to save the money transfer form";
 
-"money_transfer_form_description" = "Please enter your name to save the money transfer form";
-
 "money_transfer_form_hint" = "Template name";
-
-"money_transfer_form_hint" = "Template name";
-
-"month" = "month";
 
 "month" = "month";
 
 "months" = "Months";
 
-"months" = "Months";
-
-"name" = "string";
-
-"name" = "string";
-
-"nav_bar_label_activation_card" = "Activate card";
-
-"nav_bar_label_activation_card" = "Activate card";
-
-"npt_label_not_enough_money" = "Your account balance is not enough to make this transaction";
-
-"npt_label_not_enough_money" = "Your account balance is not enough to make this transaction";
-
-"npt_label_transfer_citad" = "Transfer CITAD";
-
-"npt_label_transfer_citad" = "Transfer CITAD";
-
-"npt_label_transfer_identity" = "Transfer via CMND/CCCD";
-
-"npt_label_transfer_identity" = "Transfer via CMND/CCCD";
-
-"npt_label_transfer_internal" = "Internal SmartOSC eBank";
-
-"npt_label_transfer_internal" = "Internal SmartOSC eBank";
-
-"npt_label_transfer_napas" = "Transfer 24/7";
-
 "npt_label_transfer_napas" = "Transfer 24/7";
 
 "npt_label_transfer_own" = "Own transfer";
 
-"npt_label_transfer_own" = "Own transfer";
-
-"npt_label_transfer_qr" = "Transfer QR CODE";
-
-"npt_label_transfer_qr" = "Transfer QR CODE";
-
-"npt_label_validation_money" = "Amount must be larger or equal to 50,000 and less than or equal to 5,000,000";
-
-"npt_label_validation_money" = "Amount must be larger or equal to 50,000 and less than or equal to 5,000,000";
-
-"npt_transfer_all" = "All";
-
-"npt_transfer_all" = "All";
-
-"npt_transfer_recently" = "Transfer recently";
-
-"npt_transfer_recently" = "Transfer recently";
-
 "obr_label_cancel" = "Cancel";
-
-"obr_label_cancel" = "Cancel";
-
-"obr_label_content_choose_identity" = "Please select document type to verify";
-
-"obr_label_content_choose_identity" = "Please select document type to verify";
-
-"obr_label_content_congrats_dialog" = "Congratulations!!!";
 
 "obr_label_content_congrats_dialog" = "Congratulations!!!";
 
 "obr_label_content_countdown_otp" = "You will be able to request OTP be sent again after";
 
-"obr_label_content_countdown_otp" = "You will be able to request OTP be sent again after";
-
 "obr_label_content_error_dialog" = "Sorry!!!";
-
-"obr_label_content_error_dialog" = "Sorry!!!";
-
-"obr_label_content_warning_dialog" = "Attention!!!";
 
 "obr_label_content_warning_dialog" = "Attention!!!";
 
 "obr_label_continue" = "Continue";
 
-"obr_label_continue" = "Continue";
-
-"obr_label_continue_input" = "Continue";
-
-"obr_label_continue_input" = "Continue";
-
-"obr_label_description_choose_identity" = "-Documents are not expired, do not use scan, photocopy. \n- Photos should be clear, not blurred, lost corners or flare \n- It is strictly forbidden to use fake documents not genuine giấy tờ giả mạo. \n- Customers are fully responsible for the images provided.";
-
-"obr_label_description_choose_identity" = "-Documents are not expired, do not use scan, photocopy. \n- Photos should be clear, not blurred, lost corners or flare \n- It is strictly forbidden to use fake documents not genuine giấy tờ giả mạo. \n- Customers are fully responsible for the images provided.";
-
-"obr_label_description_input_phone_number" = "Please provide your phone number to register service";
-
-"obr_label_description_input_phone_number" = "Please provide your phone number to register service";
-
-"obr_label_description_missing_data_create_account" = "If you exist this page you will have to verify your account from the beginning.\n Are you sure you want to exist?";
-
-"obr_label_description_missing_data_create_account" = "If you exist this page you will have to verify your account from the beginning.\n Are you sure you want to exist?";
-
 "obr_label_description_register_account" = "Password need to have 6-8 character, contains number,lowercase letters, uppercase letters and special characters";
-
-"obr_label_description_register_account" = "Password need to have 6-8 character, contains number,lowercase letters, uppercase letters and special characters";
-
-"obr_label_exit" = "Exist";
-
-"obr_label_exit" = "Exist";
-
-"obr_label_identity" = "CCCD/CMND";
-
-"obr_label_identity" = "CCCD/CMND";
-
-"obr_label_note" = "Notes:";
-
-"obr_label_note" = "Notes:";
-
-"obr_label_ok" = "OK";
 
 "obr_label_ok" = "OK";
 
 "obr_label_otp_error" = "OTP is not correct";
 
-"obr_label_otp_error" = "OTP is not correct";
-
 "obr_label_otp_input" = "Input OTP";
-
-"obr_label_otp_input" = "Input OTP";
-
-"obr_label_passport" = "Passport";
-
-"obr_label_passport" = "Passport";
-
-"obr_label_phone_number" = "Phone number";
-
-"obr_label_phone_number" = "Phone number";
 
 "obr_label_resend_otp" = "Resend OTP";
 
-"obr_label_resend_otp" = "Resend OTP";
-
-"obr_label_select_value" = "Select value";
-
-"obr_label_select_value" = "Select value";
-
-"ocr_confirm_msg_date_identity_document_required_empty" = "Please select your issuing date";
-
-"ocr_confirm_msg_date_identity_document_required_empty" = "Please select your issuing date";
-
-"ocr_confirm_msg_dob_required_empty" = "Please enter your date of birth";
-
-"ocr_confirm_msg_dob_required_empty" = "Please enter your date of birth";
-
-"ocr_confirm_msg_full_name_required_empty" = "Please enter your full name";
-
-"ocr_confirm_msg_full_name_required_empty" = "Please enter your full name";
-
-"ocr_confirm_msg_gender_required_empty" = "Please select your gender";
-
-"ocr_confirm_msg_gender_required_empty" = "Please select your gender";
-
-"ocr_confirm_msg_identity_document_required_empty" = "Please enter your identity document";
-
-"ocr_confirm_msg_identity_document_required_empty" = "Please enter your identity document";
-
-"ocr_confirm_msg_identity_document_required_format" = "Your identity number is not correct";
-
-"ocr_confirm_msg_identity_document_required_format" = "Your identity number is not correct";
-
-"ocr_confirm_msg_permanent_address_required_empty" = "Please select your detail address";
-
-"ocr_confirm_msg_permanent_address_required_empty" = "Please select your detail address";
-
-"ocr_confirm_msg_permanent_district_required_empty" = "Please select your district";
-
-"ocr_confirm_msg_permanent_district_required_empty" = "Please select your district";
-
-"ocr_confirm_msg_permanent_province_city_required_empty" = "Please select your province/city";
-
-"ocr_confirm_msg_permanent_province_city_required_empty" = "Please select your province/city";
-
-"ocr_confirm_msg_permanent_ward_required_empty" = "Please select your ward";
-
-"ocr_confirm_msg_permanent_ward_required_empty" = "Please select your ward";
-
-"ocr_confirm_msg_place_identity_document_required_empty" = "Please select your issuing place";
-
-"ocr_confirm_msg_place_identity_document_required_empty" = "Please select your issuing place";
-
-"payment_bill_failure" = "Bill payment failure. Please try again";
-
-"payment_bill_failure" = "Bill payment failure. Please try again";
-
-"payment_bill_success" = "Bill payment successful";
-
-"payment_bill_success" = "Bill payment successful";
-
 "per_month" = "per month";
-
-"per_month" = "per month";
-
-"phonenumber_msg_required_empty" = "Please enter your mobile number";
-
-"phonenumber_msg_required_empty" = "Please enter your mobile number";
-
-"phonenumber_msg_required_phone_length" = "The mobile number contains 10 digits and starts with 0";
-
-"phonenumber_msg_required_phone_length" = "The mobile number contains 10 digits and starts with 0";
 
 "save" = "Save";
 
-"save" = "Save";
-
-"save_payment_template_success" = "Save template successful";
-
-"save_payment_template_success" = "Save template successful";
-
-"select_product_field_branch_msg_required_empty" = "Please select branch";
-
-"select_product_field_branch_msg_required_empty" = "Please select branch";
-
-"selectOtherDocument" = "Chọn tài liệu khác";
-
 "service_eletricity" = "Electricity";
 
-"service_eletricity" = "Electricity";
-
-"service_hospital" = "Hospital";
-
-"service_hospital" = "Hospital";
-
-"service_insurrance" = "Insurance";
-
-"service_insurrance" = "Insurance";
-
 "service_internet" = "Internet";
-
-"service_internet" = "Internet";
-
-"service_landline_phone" = "Landline phone";
-
-"service_landline_phone" = "Landline phone";
-
-"service_phone" = "Phone";
-
-"service_phone" = "Phone";
-
-"service_tax_fee" = "Tax,fee";
-
-"service_tax_fee" = "Tax,fee";
-
-"service_train" = "Train ticket";
-
-"service_train" = "Train ticket";
-
-"service_tuition" = "Tuition";
-
-"service_tuition" = "Tuition";
-
-"service_tv" = "Television";
 
 "service_tv" = "Television";
 
 "service_water" = "Water";
 
-"service_water" = "Water";
-
-"servie_fight" = "Flight ticket";
-
-"servie_fight" = "Flight ticket";
-
-"settelement" = "Successful settlement";
-
 "settelement" = "Successful settlement";
 
 "settelement_account_receive" = "Account receiving money";
-
-"settelement_account_receive" = "Account receiving money";
-
-"settelement_transaction_number" = "Transaction number";
-
-"settelement_transaction_number" = "Transaction number";
-
-"setting.biometric.title" = "Login with Touch/Face ID";
-
-"setting.header.welcome" = "Good morning!";
-
-"setting.identity" = "Personal information";
-
-"setting.identity" = "Account info";
-
-"setting.language.select.title" = "Language";
-
-"setting.logout.title" = "Log out";
-
-"setting.not_me.title" = "Not me";
-
-"setting.notification" = "Balance notification";
-
-"setting.secure" = "Security settings";
-
-"settlement_amount" = "Amount";
 
 "settlement_amount" = "Amount";
 
 "smf_label_account_beneficiary" = "Account beneficiary";
 
-"smf_label_account_beneficiary" = "Account beneficiary";
-
 "smf_label_amount" = "Amount";
-
-"smf_label_amount" = "Amount";
-
-"smf_label_bank_beneficiary" = "Bank beneficiary";
 
 "smf_label_bank_beneficiary" = "Bank beneficiary";
 
 "smf_label_cancel" = "Cancel";
 
-"smf_label_cancel" = "Cancel";
-
-"smf_label_cancel_verify_transaction" = "Canceled transaction verification";
-
-"smf_label_cancel_verify_transaction" = "Canceled transaction verification";
-
-"smf_label_content" = "Content";
-
-"smf_label_content" = "Content";
-
 "smf_label_delete" = "Delete";
-
-"smf_label_delete" = "Delete";
-
-"smf_label_empty" = "Empty Data";
 
 "smf_label_empty" = "Empty Data";
 
 "smf_label_frequency" = "Frequency";
 
-"smf_label_frequency" = "Frequency";
-
 "smf_label_mode_transfer" = "Transfer Mode";
-
-"smf_label_mode_transfer" = "Transfer Mode";
-
-"smf_label_name_beneficiary" = "Name beneficiary";
-
-"smf_label_name_beneficiary" = "Name beneficiary";
-
-"smf_label_notification" = "Notification";
-
-"smf_label_notification" = "Notification";
-
-"smf_label_status" = "Status";
-
-"smf_label_status" = "Status";
-
-"smf_label_title_owner" = "Owner";
-
-"smf_label_title_owner" = "Owner";
-
-"smf_label_transaction_date" = "Transaction date";
-
-"smf_label_transaction_date" = "Transaction date";
-
-"smf_label_transfer" = "Transfer";
 
 "smf_label_transfer" = "Transfer";
 
 "smf_label_transfer_outside" = "Outside SmartOSC transfer";
 
-"smf_label_transfer_outside" = "Outside SmartOSC transfer";
-
 "smf_label_transfer_services_contact" = "Contact Transfer";
 
-"smf_label_transfer_services_contact" = "Contact Transfer";
-
-"smf_label_transfer_services_schedule" = "Schedule Transfer";
-
-"smf_label_transfer_services_schedule" = "Schedule Transfer";
-
-"smf_label_transfer_services_template" = "Payment Template";
-
-"smf_label_transfer_services_template" = "Payment Template";
-
 "smf_label_transfer_within" = "Within SmartOSC transfer";
-
-"smf_label_transfer_within" = "Within SmartOSC transfer";
-
-"smf_label_type_transfer" = "Transfer Type";
-
-"smf_label_type_transfer" = "Transfer Type";
-
-"smf_label_unknown_error" = "An error occurred";
-
-"smf_label_unknown_error" = "An error occurred";
 
 "sof_account_details" = "Account Details";
 
 "sof_account_holder" = "Account holder";
-
-"sof_account_number" = "%@ account(s)";
 
 "sof_account_number" = "%@ account(s)";
 
@@ -1964,8 +569,6 @@ print, graphic or web designs.";
 "sof_annual_fee" = "Annual fees";
 
 "sof_apply" = "Apply";
-
-"sof_bill_pay_not_yet_due" = "[en] Chưa đến kì thanh toán";
 
 "sof_biweekly" = "Biweekly";
 
@@ -2071,8 +674,7 @@ print, graphic or web designs.";
 
 "sof_paybills_topup" = "Pay bills and top-ups";
 
-"sof_paybills_topup_description" = "Pay for mobile, electricity, waters, credit card
-and more";
+"sof_paybills_topup_description" = "Pay for mobile, electricity, waters, credit card\nand more";
 
 "sof_payment_due_date" = "Payment due date:";
 
@@ -2152,580 +754,112 @@ and more";
 
 "spend_per_category" = "Spend per category";
 
-"spend_per_category" = "Spend per category";
-
-"str_active_card_now" = "[en]";
-
-"str_active_card_now" = "[en]";
-
 "str_back_to_home_page" = "Back to homepage";
-
-"str_back_to_home_page" = "Back to homepage";
-
-"str_btn_verify" = "Confirm";
-
-"str_btn_verify" = "Confirm";
-
-"str_card_compare_label" = "Compare card";
-
-"str_card_compare_label" = "Compare card";
-
-"str_card_input_email_label" = "Input email";
-
-"str_card_input_email_label" = "Input email";
-
-"str_card_issue_fee_free" = "Free";
-
-"str_card_issue_fee_free" = "Free";
-
-"str_card_owner_info_label" = "Cardholder information";
-
-"str_card_owner_info_label" = "Cardholder information";
-
-"str_change_language" = "Change language";
-
-"str_change_language" = "Change language";
-
-"str_choose" = "Chose";
-
-"str_choose" = "Chose";
-
-"str_close" = "Close";
 
 "str_close" = "Close";
 
 "str_confirm" = "Confirmation";
 
-"str_confirm" = "Confirmation";
-
-"str_confirm_transaction" = "Transaction confirmation";
-
-"str_confirm_transaction" = "Transaction confirmation";
-
 "str_credit_card" = "Credit card";
-
-"str_credit_card" = "Credit card";
-
-"str_credit_card_label" = "Credit card";
-
-"str_credit_card_label" = "Credit card";
-
-"str_debit_card" = "Debit card";
-
-"str_debit_card" = "Debit card";
-
-"str_debit_card_label" = "Debit card";
-
-"str_debit_card_label" = "Debit card";
-
-"str_edit" = "Edit";
 
 "str_edit" = "Edit";
 
 "str_feature_create_card_label_address_card" = "Address to receive card";
 
-"str_feature_create_card_label_address_card" = "Address to receive card";
-
-"str_feature_create_card_label_address_estimate_time" = "You will receive the card in 3-5 working days.";
-
 "str_feature_create_card_label_address_estimate_time" = "You will receive the card in 3-5 working days.";
 
 "str_feature_create_card_label_congrat" = "Congratulations! You has just completed registration";
 
-"str_feature_create_card_label_congrat" = "Congratulations! You has just completed registration";
-
-"str_feature_create_card_label_request_open_card" = "Open new card successfully";
-
-"str_feature_create_card_label_request_open_card" = "Open new card successfully";
-
 "str_feature_create_card_label_term_confirm" = "If you click on confirmation you agree with SmartOSC credit card Term & Conditions";
-
-"str_feature_create_card_label_term_confirm" = "If you click on confirmation you agree with SmartOSC credit card Term & Conditions";
-
-"str_feature_create_card_label_view_contract" = "View card contract";
-
-"str_feature_create_card_label_view_contract" = "View card contract";
-
-"str_history_transaction_category" = "Transaction type";
-
-"str_history_transaction_category" = "Transaction type";
-
-"str_history_transaction_filter" = "Filter:";
-
-"str_history_transaction_filter" = "Filter:";
-
-"str_history_transaction_filter_3_month_ago" = "3 months latest";
-
-"str_history_transaction_filter_3_month_ago" = "3 months latest";
-
-"str_home_change_money_source" = "Change source money";
-
-"str_home_change_money_source" = "Change source money";
-
-"str_home_service_atm_withdraw" = "Withdraw ATM";
 
 "str_home_service_atm_withdraw" = "Withdraw ATM";
 
 "str_home_service_bill_pay" = "Bills";
 
-"str_home_service_bill_pay" = "Bills";
-
 "str_home_service_loan" = "Loans";
-
-"str_home_service_loan" = "Loans";
-
-"str_home_service_manage_card" = "Card management";
 
 "str_home_service_manage_card" = "Card management";
 
 "str_home_service_pocket" = "Pocket";
 
-"str_home_service_pocket" = "Pocket";
-
-"str_home_service_read_more" = "See more >";
-
-"str_home_service_read_more" = "See more >";
-
-"str_home_service_save_money" = "Savings";
-
 "str_home_service_save_money" = "Savings";
 
 "str_home_service_top_up_mobile_card" = "Mobile topup";
-
-"str_home_service_top_up_mobile_card" = "Mobile topup";
-
-"str_home_service_transfer_money" = "Transfer money";
-
-"str_home_service_transfer_money" = "Transfer money";
-
-"str_identity_go_to_store_to_update_label" = "If you have new CMND/CCCD please go to nearest SmartOSC branch to update";
 
 "str_identity_go_to_store_to_update_label" = "If you have new CMND/CCCD please go to nearest SmartOSC branch to update";
 
 "str_identity_label" = "CMND/CCCD";
 
-"str_identity_label" = "CMND/CCCD";
-
 "str_log_out" = "Logout";
-
-"str_log_out" = "Logout";
-
-"str_no_data" = "No data";
-
-"str_no_data" = "No data";
-
-"str_owner_card_name_label" = "Cardholder name";
 
 "str_owner_card_name_label" = "Cardholder name";
 
 "str_prepare_card_label" = "We are preparing your card, please kindly wait in moments";
 
-"str_prepare_card_label" = "We are preparing your card, please kindly wait in moments";
-
-"str_request_create_card_olnine" = "Request open card Online";
-
-"str_request_create_card_olnine" = "Request open card Online";
-
 "str_search_hint" = "Search";
 
-"str_search_hint" = "Search";
-
-"str_setting_account_management" = "Account management";
-
-"str_setting_account_management" = "Account management";
-
 "str_setting_change_language" = "Choose languages";
-
-"str_setting_change_language" = "Choose languages";
-
-"str_setting_login_with_biometric" = "Login with Touch/ Face ID";
-
-"str_setting_login_with_biometric" = "Login with Touch/ Face ID";
-
-"str_setting_noti_balance" = "Account balance announcement";
-
-"str_setting_noti_balance" = "Account balance announcement";
-
-"str_setting_setup_security" = "Security setting";
 
 "str_setting_setup_security" = "Security setting";
 
 "str_setting_user_info" = "Personal information";
 
-"str_setting_user_info" = "Personal information";
-
 "str_transfer_money_account_number_label" = "Account";
-
-"str_transfer_money_account_number_label" = "Account";
-
-"str_transfer_money_add_memo" = "Description ( optional)";
-
-"str_transfer_money_add_memo" = "Description ( optional)";
-
-"str_transfer_money_amount_transfer" = "Amount";
-
-"str_transfer_money_amount_transfer" = "Amount";
-
-"str_transfer_money_atm_card_label" = "ATM card";
-
-"str_transfer_money_atm_card_label" = "ATM card";
-
-"str_transfer_money_bank_account_name" = "Account name";
-
-"str_transfer_money_bank_account_name" = "Account name";
-
-"str_transfer_money_bank_account_number_label" = "Account number";
 
 "str_transfer_money_bank_account_number_label" = "Account number";
 
 "str_transfer_money_choose_bank" = "Select bank";
 
-"str_transfer_money_choose_bank" = "Select bank";
-
-"str_transfer_money_continue" = "Continue";
-
-"str_transfer_money_continue" = "Continue";
-
 "str_transfer_money_execution_date" = "Execution date";
 
-"str_transfer_money_execution_date" = "Execution date";
-
-"str_transfer_money_frequency" = "Frequency";
-
-"str_transfer_money_frequency" = "Frequency";
-
-"str_transfer_money_from" = "From :";
-
-"str_transfer_money_from" = "From :";
-
 "str_transfer_money_phone_number_label" = "Phone number";
-
-"str_transfer_money_phone_number_label" = "Phone number";
-
-"str_transfer_money_recipient_name_label" = "Recipient name";
-
-"str_transfer_money_recipient_name_label" = "Recipient name";
-
-"str_transfer_money_save_account" = "Save recipient";
-
-"str_transfer_money_save_account" = "Save recipient";
-
-"str_transfer_money_schedule" = "Transfer money schedule";
-
-"str_transfer_money_schedule" = "Transfer money schedule";
-
-"str_transfer_money_select_branch" = "Select branch";
 
 "str_transfer_money_select_branch" = "Select branch";
 
 "str_transfer_money_select_city" = "Select province/city";
 
-"str_transfer_money_select_city" = "Select province/city";
-
 "str_transfer_money_select_contact" = "Select contact";
-
-"str_transfer_money_select_contact" = "Select contact";
-
-"str_transfer_money_to" = "To :";
-
-"str_transfer_money_to" = "To :";
-
-"str_wait_active_content" = "You have to activate the card inorder to use functions";
 
 "str_wait_active_content" = "You have to activate the card inorder to use functions";
 
 "str_wait_to_active" = "Wait to active";
 
-"str_wait_to_active" = "Wait to active";
-
-"str_welcome_home" = "Welcome,";
-
-"str_welcome_home" = "Welcome,";
-
-"string_hello" = "Welcome,";
-
-"string_hello" = "Welcome,";
-
-"string_onboarding_current_address" = "Current address";
-
-"string_onboarding_current_address" = "Current address";
-
-"string_onboarding_same_address" = "Your current residential address is the same as your permanent address";
-
-"string_onboarding_same_address" = "Your current residential address is the same as your permanent address";
-
-"string_onboarding_term_confirm" = "I agree to SmartOSC E-Banking Terms & Conditions";
-
-"string_onboarding_term_confirm" = "I agree to SmartOSC E-Banking Terms & Conditions";
-
 "string_otp_send_to_phone_number" = "Authentication OTP has been sent to your phone number";
-
-"string_otp_send_to_phone_number" = "Authentication OTP has been sent to your phone number";
-
-"tab.dashboard" = "Dashboard";
-
-"tab.setting" = "Settings";
-
-"tab.statistics" = "PFM";
-
-"tab.transfer" = "Transfer";
-
-"term_and_interest_rate" = "Term & interest rate";
-
-"term_and_interest_rate" = "Term & interest rate";
 
 "term_deposit_confirm_label" = "Open term deposit confirmation";
 
-"term_deposit_confirm_label" = "Open term deposit confirmation";
-
-"term_deposit_confirm_label_amount" = "Amount";
-
-"term_deposit_confirm_label_amount" = "Amount";
-
-"term_deposit_confirm_label_date_payment" = "End date";
-
-"term_deposit_confirm_label_date_payment" = "End date";
-
 "term_deposit_confirm_label_receiving_account" = "Receiving account";
 
-"term_deposit_confirm_label_receiving_account" = "Receiving account";
-
-"term_deposit_confirm_label_renew_terms" = "Settle term deposit";
-
-"term_deposit_confirm_label_renew_terms" = "Settle term deposit";
-
-"term_deposit_confirm_label_terms_and_interest" = "Term & Interest rate";
-
-"term_deposit_confirm_label_terms_and_interest" = "Term & Interest rate";
-
-"term_deposit_estimate_rate" = "Interest at at the end of the period";
-
-"term_deposit_estimate_rate" = "Interest at at the end of the period";
-
-"term_deposit_get_accounts_empty" = "Cannot get term deposit list";
-
-"term_deposit_get_accounts_empty" = "Cannot get term deposit list";
-
-"term_deposit_get_terms_empty" = "Cannot get term deposit period";
-
-"term_deposit_get_terms_empty" = "Cannot get term deposit period";
-
 "term_deposit_labal_create_saving_account_success" = "Open new term deposit";
-
-"term_deposit_labal_create_saving_account_success" = "Open new term deposit";
-
-"term_deposit_label_account" = "Source account";
-
-"term_deposit_label_account" = "Source account";
-
-"term_deposit_label_amount" = "Amount";
-
-"term_deposit_label_amount" = "Amount";
-
-"term_deposit_label_create_saving_account_failure" = "Open new term deposit unsuccessfully, please try again later";
-
-"term_deposit_label_create_saving_account_failure" = "Open new term deposit unsuccessfully, please try again later";
-
-"term_deposit_label_saving_account" = "Saving account";
-
-"term_deposit_label_saving_account" = "Saving account";
-
-"term_deposit_label_select_term" = "Select term";
-
-"term_deposit_label_select_term" = "Select term";
-
-"term_deposit_open_saving_account" = "Open term deposit";
 
 "term_deposit_open_saving_account" = "Open term deposit";
 
 "term_deposit_renew_type_one" = "Receive both original and interest";
 
-"term_deposit_renew_type_one" = "Receive both original and interest";
-
 "term_deposit_renew_type_three" = "Reinvest both original and interest in the new corresponding period";
-
-"term_deposit_renew_type_three" = "Reinvest both original and interest in the new corresponding period";
-
-"term_deposit_renew_type_two" = "Reinvest the original in the new corresponding period and receive interest";
 
 "term_deposit_renew_type_two" = "Reinvest the original in the new corresponding period and receive interest";
 
 "term_deposit_term_label" = "Term";
 
-"term_deposit_term_label" = "Term";
-
 "text_one_month" = "1 month";
-
-"text_one_month" = "1 month";
-
-"text_six_months" = "6 months";
 
 "text_six_months" = "6 months";
 
 "text_twelve_months" = "12 months";
 
-"text_twelve_months" = "12 months";
-
-"title_hello" = "Welcome back,";
-
-"title_hello" = "Welcome back,";
-
-"title_username" = "Username";
-
 "title_username" = "Username";
 
 "transaction_result_success" = "Transaction successful";
-
-"transaction_result_success" = "Transaction successful";
-
-"transfer.citad.title" = "Citad Transfer";
-
-"transfer.intra.account_number.title" = "Bank account";
-
-"transfer.intra.atm.title" = "ATM card";
-
-"transfer.intra.phonenumber.title" = "Phone number";
-
-"transfer.intra.title" = "Within SmartOSC Transfer";
-
-"transfer.label.account_number" = "Account number";
-
-"transfer.label.all" = "ALL";
-
-"transfer.label.amount" = "Amount";
-
-"transfer.label.atm_number" = "ATM card number";
-
-"transfer.label.branch" = "Branch";
-
-"transfer.label.continueBtn" = "Continue";
-
-"transfer.label.excutionDate" = "Execution date";
-
-"transfer.label.frequency" = "Frequency";
-
-"transfer.label.memo" = "Description (optional)";
-
-"transfer.label.monthly" = "Monthly";
-
-"transfer.label.once" = "Once";
-
-"transfer.label.province" = "Province/City";
-
-"transfer.label.receive_name" = "Recipient full name";
-
-"transfer.label.receiver_list" = "Recipient list";
-
-"transfer.label.saving" = "Save recipient";
-
-"transfer.label.schedule" = "Transfer schedule:";
-
-"transfer.label.select_bank" = "Select bank";
-
-"transfer.label.select_frequency" = "Select frequency";
 
 "transfer.label.select_province" = "Select Province";
 
-"transfer.label.source_money" = "Change source money";
-
-"transfer.label.weekly" = "Weekly";
-
-"transfer.label.yearly" = "Yearly";
-
-"transfer.menu.title.citad" = "Normal\ntransfer";
-
-"transfer.menu.title.contacts" = "Contacts";
-
-"transfer.menu.title.identity" = "Identification\ntransfer";
-
-"transfer.menu.title.internal" = "SmartOSC\ninternal";
-
-"transfer.menu.title.napas" = "24/7\ntransfer";
-
-"transfer.menu.title.savedTemplate" = "Transaction\ntemplates";
-
-"transfer.menu.title.schedule" = "Scheduled\ntransfer orders";
-
-"transfer.menu.title.self_transfer" = "Self\ntransfer";
-
-"transfer.napas.label.from" = "From:";
-
-"transfer.napas.label.to" = "To:";
-
-"transfer.napas.title" = "24/7 Napas Transfer";
-
-"transfer.notice.amount" = "Please enter amount";
-
-"transfer.notice.enter_phonenumber" = "The phone number must have 10 digits and start with 0";
-
-"transfer.notice.frequency" = "Please select frequency";
-
-"transfer.notice.recive_account" = "Please enter the recipient's bank account with 0";
-
-"transfer.notice.schedule" = "Please select execution date";
-
-"transfer.notice.select_bank" = "Please select bank";
-
-"transfer.notice.select_branch" = "Please enter branch";
-
-"transfer.notice.select_province" = "Please enter province/city";
-
-"transfer.notice.select_receiver" = "Please enter the recipient's name";
-
-"transfer.popup.btn.cancel" = "Cancel";
-
-"transfer.popup.btn.negative" = "Agree";
-
-"transfer.popup.btn.select" = "Select";
-
-"transfer.popup.mes.invalid_account" = "The account is not exist";
-
-"transfer.popup.title" = "Sorry!!!";
-
-"transfer.title.list" = "View";
-
 "user_profile_label_full_name" = "Fullname";
 
-"user_profile_label_full_name" = "Fullname";
-
-"user_profile_label_home" = "Personal information";
-
-"user_profile_label_home" = "Personal information";
-
 "user_profile_label_identity_card_number" = "CCCD";
-
-"user_profile_label_identity_card_number" = "CCCD";
-
-"user_profile_label_login_name" = "Username";
-
-"user_profile_label_login_name" = "Username";
-
-"user_profile_label_phone_number" = "Phone number";
-
-"user_profile_label_phone_number" = "Phone number";
-
-"vnd_currency_formatter" = "$";
-
-"vnd_currency_formatter" = "$";
-
-"warning_need_entered_full_information" = "Please input information fullly";
-
-"warning_need_entered_full_information" = "Please input information fullly";
-
-"weeks" = "Weeks";
 
 "weeks" = "Weeks";
 
 "year" = "year";
 
-"year" = "year";
-
 "years" = "Years";
-
-"years" = "Years";
-
-/* No comment provided by engineer. */
-"OK" = "";
-
-/* No comment provided by engineer. */
-"Đồng ý" = "";

@@ -35,14 +35,29 @@ enum AppType {
 class SyncLanguageVC: UIViewController {
     let sheetService = GTLRSheetsService()
     var appType: AppType = .retail
-    var localLanguage: [MultilanguageModel] = []
+    var localLanguages: [MultilanguagePlistModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         sheetService.apiKey = Constants.apiKey
-        localLanguage = readLocalizableFile()
-        getDataFromBBGoogleSheet(sheetName: "Backbase Retail App") { result in
-            print(result)
+        localLanguages = readLocalizableFile()
+        
+        let sheets = ["Backbase Retail App"]
+        getDataBBGoogleSheet(sheets: sheets) {[weak self] results in
+            guard let self else { return }
+            for result in results {
+                if let itemLocal = self.localLanguages.first(where: {$0.iosKey == result.iosKey}) {
+                    itemLocal.en = result.en
+                    itemLocal.sc = result.sc
+                    itemLocal.tc = result.tc
+                    itemLocal.vn = result.vn
+                    itemLocal.thai = result.thai
+                } else {
+                    self.localLanguages.append(result)
+                    print("warning key not found: \"\(result.iosKey)\"")
+                }
+            }
+            self.writeNewData()
         }
     }
     
@@ -184,7 +199,7 @@ extension SyncLanguageVC {
 
 //read data
 extension SyncLanguageVC {
-    func readLocalizableFile() -> [MultilanguageModel] {
+    func readLocalizableFile() -> [MultilanguagePlistModel] {
         guard let pathen = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.en.toKey)) else { return []}
         guard let pathSC = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.sc.toKey)) else { return []}
         guard let pathTC = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.tc.toKey)) else { return []}
@@ -197,7 +212,7 @@ extension SyncLanguageVC {
         guard let dictVI = NSDictionary(contentsOfFile: pathVI) as? [String: String] else { return []}
         guard let dictThai = NSDictionary(contentsOfFile: pathThai) as? [String: String] else { return []}
         
-        var datas: [MultilanguageModel] = []
+        var datas: [MultilanguagePlistModel] = []
         for key in dictEn.keys {
             let iosKey = key.trim
             let valueEN = dictEn[key]?.correctStringFromLocalize ?? ""
@@ -205,12 +220,7 @@ extension SyncLanguageVC {
             let valueThai = dictThai[key]?.correctStringFromLocalize ?? valueEN
             let valueTC = dictTC[key]?.correctStringFromLocalize ?? valueEN
             let valueSC = dictSC[key]?.correctStringFromLocalize ?? valueEN
-            let itemLang = MultilanguageModel(iosKey: iosKey, aosKey: iosKey,
-                                              en: valueEN,
-                                              vi: valueVN,
-                                              thai: valueThai,
-                                              tc: valueTC,
-                                              sc: valueSC)
+            let itemLang = MultilanguagePlistModel(iosKey: iosKey, aosKey: iosKey, tc: [valueTC], sc: [valueSC], en: [valueEN], vn: [valueVN], thai: [valueThai])
 //            print(itemLang.printLanguage(language: .en))
             datas.append(itemLang)
         }
@@ -222,7 +232,7 @@ extension SyncLanguageVC {
 //Write data
 extension SyncLanguageVC {
     func writeNewData(language: LanguageKey = .en) {
-        let resultData = localLanguage.map({$0.printLanguage(language: language)}).joined(separator: "\n")
+        let resultData = localLanguages.map({$0.printLanguage(language: language)}).joined(separator: "\n")
         let filename = getDocumentsDirectory().appendingPathComponent("\(language.rawValue)_\(appType.localizableFileName).strings")
         print("filename:")
         print(filename)
