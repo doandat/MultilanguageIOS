@@ -42,10 +42,114 @@ class SyncLanguageVC: UIViewController {
         sheetService.apiKey = Constants.apiKey
         localLanguages = readLocalizableFile()
         
+//        syncMultilanguageApp()
+//        DispatchQueue.main.async {
+//            self.findDuplicateLocalizeEng()
+//        }
+//        syncMultilanguageAppAndFindDuplicate()
+        syncMultilanguageAppTGoogleSheet()
+//        convertSOFToSmf()
+    }
+    
+    private func findDuplicateLocalizeEng() {
+        var languageEngs: [MultilanguagePlistModel] = []
+        var duplicateKeylanguageEng: [String] = []
+        for language in localLanguages {
+            if let en = language.en.first {
+                if let itemT = languageEngs.first(where: {$0.en.first == en}) {
+                    duplicateKeylanguageEng.append(language.iosKey)
+//                    print("duplicate eng: \(language.iosKey)")
+                    let keyNeedReplace = language.iosKey.split(separator: "_").map({$0.firstUppercased}).joined().firstLowercase
+                    let keyResult = itemT.iosKey.split(separator: "_").map({$0.firstUppercased}).joined().firstLowercase
+                    print("'s/L10n.\(keyNeedReplace)/L10n.\(keyResult)/g'")
+                } else {
+                    languageEngs.append(language)
+                }
+            }
+        }
+        
+    }
+    
+    private func convertSOFToSmf() {
+        for language in localLanguages {
+            let key = language.iosKey
+            if key.contains("sof_") {
+                let newKey = key.replacingOccurrences(of: "sof_", with: "smf_")
+                let keyNeedReplace = key.split(separator: "_").map({$0.firstUppercased}).joined().firstLowercase
+                let keyResult = newKey.split(separator: "_").map({$0.firstUppercased}).joined().firstLowercase
+                print("'s/L10n.\(keyNeedReplace)/L10n.\(keyResult)/g'")
+                language.iosKey = newKey
+                language.aosKey = newKey
+            }
+        }
+        writeNewData(language: .en)
+    }
+    
+    private func syncMultilanguageAppTGoogleSheet() {
         let sheets = ["Backbase Retail App"]
-        getDataBBGoogleSheet(sheets: sheets) {[weak self] results in
+        getDataBBGoogleSheet(sheets: sheets) {[weak self] (resultsIOS, resultsAndroid) in
             guard let self else { return }
-            for result in results {
+            var arrDataNotExixtOnGoogleSheet: [MultilanguagePlistModel] = []
+            for language in localLanguages {
+                if let itemLocal = resultsIOS.first(where: {$0.iosKey == language.iosKey}) {
+                    
+                } else {
+                    arrDataNotExixtOnGoogleSheet.append(language)
+                }
+            }
+            
+            for item in arrDataNotExixtOnGoogleSheet {
+                print(item.iosKey)
+            }
+            print("\n\n\n")
+            for item in arrDataNotExixtOnGoogleSheet {
+                print(item.en.first!)
+            }
+            print("\n\n\n")
+            for item in arrDataNotExixtOnGoogleSheet {
+                print(item.vn.first!)
+            }
+            
+        }
+    }
+    
+    
+    private func syncMultilanguageAppAndFindDuplicate() {
+        let sheets = ["Backbase Retail App"]
+        getDataBBGoogleSheet(sheets: sheets) {[weak self] (resultsIOS, resultsAndroid) in
+            guard let self else { return }
+            
+            for result in resultsIOS {
+                if let itemLocal = self.localLanguages.first(where: {$0.iosKey == result.iosKey}) {
+                    itemLocal.en = result.en
+                    itemLocal.sc = result.sc
+                    itemLocal.tc = result.tc
+                    itemLocal.vn = result.vn
+                    itemLocal.thai = result.thai
+                } else if let itemLocal = self.localLanguages.first(where: {$0.en.first == result.en.first}) {
+                    self.localLanguages.append(result)
+//                    print("need replace key \(itemLocal.iosKey) with \(result.iosKey)")
+                    let keyNeedReplace = itemLocal.iosKey.split(separator: "_").map({$0.firstUppercased}).joined().firstLowercase
+                    let keyResult = result.iosKey.split(separator: "_").map({$0.firstUppercased}).joined().firstLowercase
+                    print("'s/L10n.\(keyNeedReplace)/L10n.\(keyResult)/g'")
+                } else {
+                    self.localLanguages.append(result)
+//                    print("warning key not found: \"\(result.iosKey)\"")
+                }
+            }
+            self.writeNewData(language: .en)
+            self.writeNewData(language: .vi)
+            self.writeNewData(language: .thai)
+            self.writeNewData(language: .tc)
+            self.writeNewData(language: .sc)
+        }
+    }
+    
+    private func syncMultilanguageApp() {
+        let sheets = ["Backbase Retail App"]
+        getDataBBGoogleSheet(sheets: sheets) {[weak self] (resultsIOS, resultsAndroid) in
+            guard let self else { return }
+            for result in resultsIOS {
                 if let itemLocal = self.localLanguages.first(where: {$0.iosKey == result.iosKey}) {
                     itemLocal.en = result.en
                     itemLocal.sc = result.sc
@@ -57,32 +161,37 @@ class SyncLanguageVC: UIViewController {
                     print("warning key not found: \"\(result.iosKey)\"")
                 }
             }
-            self.writeNewData()
+            self.writeNewData(language: .en)
+            self.writeNewData(language: .vi)
+            self.writeNewData(language: .thai)
+            self.writeNewData(language: .tc)
+            self.writeNewData(language: .sc)
         }
     }
     
     
     @IBAction func actionEng(_ sender: Any) {
-        writeNewData(language: .en)
+        shareFile(language: .en)
     }
     @IBAction func actionVN(_ sender: Any) {
-        writeNewData(language: .vi)
+        shareFile(language: .vi)
     }
     @IBAction func actionThai(_ sender: Any) {
-        writeNewData(language: .thai)
+        shareFile(language: .thai)
     }
     @IBAction func actionTC(_ sender: Any) {
-        writeNewData(language: .tc)
+        shareFile(language: .tc)
     }
     @IBAction func actionSC(_ sender: Any) {
-        writeNewData(language: .sc)
+        shareFile(language: .sc)
     }
 }
 
 //read google sheet
 extension SyncLanguageVC {
-    func getDataFromBBGoogleSheet(sheetName: String, completionHandler: @escaping ([MultilanguagePlistModel]) -> Void) {
-        var datas: [MultilanguagePlistModel] = []
+    func getDataFromBBGoogleSheet(sheetName: String, completionHandler: @escaping (_ ios: [MultilanguagePlistModel],_ android: [MultilanguagePlistModel]) -> Void) {
+        var datasIOS: [MultilanguagePlistModel] = []
+        var datasAndroid: [MultilanguagePlistModel] = []
         let spreadsheetId = appType.spreadsheetId
 //        let spreadsheetId = "1lCRrxpoW696Zo9w2Z0TCdLxh2spWg0-TpNWpdP3HkFA"
         let range = "\(sheetName)!A:H"
@@ -93,12 +202,12 @@ extension SyncLanguageVC {
         sheetService.executeQuery(query) { (ticket, result, error) in
             if let error = error {
                 print(error)
-                completionHandler([])
+                completionHandler(datasIOS, datasAndroid)
                 return
             }
             guard let result = result as? GTLRSheets_ValueRange,
                   let rows = result.values as? [[String]] else {
-                completionHandler([])
+                completionHandler(datasIOS, datasAndroid)
                 return
             }
             var localizeStrings: [[String]] = []
@@ -159,12 +268,26 @@ extension SyncLanguageVC {
                 if iosKey.isEmpty {
                     continue
                 }
-                if let en = row.sofValue(at: indexEng)?.correctStringFromGoogleSheet {
-                    let vn = row.sofValue(at: indexVN)?.correctStringFromGoogleSheet ?? en
-                    let thai = row.sofValue(at: indexThai)?.correctStringFromGoogleSheet ?? en
-                    let itemLang = MultilanguagePlistModel(iosKey: iosKey, aosKey: aosKey, tc: [en], sc: [en], en: [en], vn: [vn], thai: [thai])
-                    print(itemLang.printLanguage(language: .thai))
-                    datas.append(itemLang)
+                if let en = row.sofValue(at: indexEng) {
+                    let vn = row.sofValue(at: indexVN) ?? en
+                    let thai = row.sofValue(at: indexThai) ?? en
+                    let itemLangIOS = MultilanguagePlistModel(iosKey: iosKey, aosKey: aosKey,
+                                                              tc: [en.correctStringFromGoogleSheetIOS],
+                                                              sc: [en.correctStringFromGoogleSheetIOS],
+                                                              en: [en.correctStringFromGoogleSheetIOS],
+                                                              vn: [vn.correctStringFromGoogleSheetIOS],
+                                                              thai: [thai.correctStringFromGoogleSheetIOS])
+//                    print(itemLangIOS.printLanguage(language: .thai))
+                    datasIOS.append(itemLangIOS)
+                    
+                    let itemLangAndroid = MultilanguagePlistModel(iosKey: iosKey, aosKey: aosKey,
+                                                              tc: [en.correctStringFromGoogleSheetAndroid],
+                                                              sc: [en.correctStringFromGoogleSheetAndroid],
+                                                              en: [en.correctStringFromGoogleSheetAndroid],
+                                                              vn: [vn.correctStringFromGoogleSheetAndroid],
+                                                              thai: [thai.correctStringFromGoogleSheetAndroid])
+//                    print(itemLangAndroid.printLanguage(language: .thai))
+                    datasAndroid.append(itemLangAndroid)
                 }
             }
 //            print(datas)
@@ -173,25 +296,27 @@ extension SyncLanguageVC {
                 return
             }
             
-            completionHandler(datas)
+            completionHandler(datasIOS, datasAndroid)
             print("Number of rows in sheet: \(rows.count)")
         }
     }
     
-    func getDataBBGoogleSheet(sheets: [String], completionHandler: @escaping ([MultilanguagePlistModel]) -> Void) {
+    func getDataBBGoogleSheet(sheets: [String], completionHandler: @escaping (_ ios: [MultilanguagePlistModel],_ android: [MultilanguagePlistModel]) -> Void) {
         let dispatchGroup = DispatchGroup()
-        var datas: [MultilanguagePlistModel] = []
+        var datasIOS: [MultilanguagePlistModel] = []
+        var datasAndroid: [MultilanguagePlistModel] = []
         for sheetName in sheets {
             dispatchGroup.enter()
-            getDataFromBBGoogleSheet(sheetName: sheetName) { results in
-                datas.append(contentsOf: results)
+            getDataFromBBGoogleSheet(sheetName: sheetName) { (resultsIos,resultsAndroid)  in
+                datasIOS.append(contentsOf: resultsIos)
+                datasAndroid.append(contentsOf: resultsAndroid)
                 dispatchGroup.leave()
             }
         }
 
         // 1
         dispatchGroup.notify(queue: .main, execute: { [weak self] in
-            completionHandler(datas)
+            completionHandler(datasIOS, datasAndroid)
         })
     }
     
@@ -233,7 +358,7 @@ extension SyncLanguageVC {
 extension SyncLanguageVC {
     func writeNewData(language: LanguageKey = .en) {
         let resultData = localLanguages.map({$0.printLanguage(language: language)}).joined(separator: "\n")
-        let filename = getDocumentsDirectory().appendingPathComponent("\(language.rawValue)_\(appType.localizableFileName).strings")
+        let filename = getFilePath(language: language)
         print("filename:")
         print(filename)
         do {
@@ -241,9 +366,17 @@ extension SyncLanguageVC {
         } catch {
             // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
         }
-        
+    }
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    func getFilePath(language: LanguageKey = .en) -> URL {
+        getDocumentsDirectory().appendingPathComponent("\(language.rawValue)_\(appType.localizableFileName).strings")
+    }
+    func shareFile(language: LanguageKey = .en) {
+        let filename = getFilePath(language: language)
         var filesToShare = [Any]()
-
         // Add the path of the text file to the Array
         filesToShare.append(filename)
 
@@ -253,11 +386,6 @@ extension SyncLanguageVC {
         // Show the share-view
         self.present(activityViewController, animated: true, completion: nil)
     }
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-
 }
 
 extension SyncLanguageVC {
