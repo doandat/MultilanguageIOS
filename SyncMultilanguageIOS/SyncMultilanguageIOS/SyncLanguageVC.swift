@@ -42,12 +42,12 @@ class SyncLanguageVC: UIViewController {
         sheetService.apiKey = Constants.apiKey
         localLanguages = readLocalizableFile()
         
-//        syncMultilanguageApp()
+        syncMultilanguageApp()
 //        DispatchQueue.main.async {
 //            self.findDuplicateLocalizeEng()
 //        }
 //        syncMultilanguageAppAndFindDuplicate()
-        syncMultilanguageAppTGoogleSheet()
+//        syncMultilanguageAppTGoogleSheet()
 //        convertSOFToSmf()
     }
     
@@ -154,9 +154,23 @@ class SyncLanguageVC: UIViewController {
                     itemLocal.en = result.en
                     itemLocal.sc = result.sc
                     itemLocal.tc = result.tc
-                    itemLocal.vn = result.vn
-                    itemLocal.thai = result.thai
+                    if !(result.vn.first?.isEmpty ?? true) {
+                        itemLocal.vn = result.vn
+                    } else if itemLocal.vn.first?.isEmpty ?? true {
+                        itemLocal.vn = ["[En] \(itemLocal.en.first ?? "")"]
+                    }
+                    if !(result.thai.first?.isEmpty ?? true) {
+                        itemLocal.thai = result.thai
+                    } else if itemLocal.thai.first?.isEmpty ?? true {
+                        itemLocal.thai = ["[En] \(itemLocal.en.first ?? "")"]
+                    }
                 } else {
+                    if result.vn.first?.isEmpty ?? true {
+                        result.vn = ["[En] \(result.en.first ?? "")"]
+                    }
+                    if result.thai.first?.isEmpty ?? true {
+                        result.thai = ["[En] \(result.en.first ?? "")"]
+                    }
                     self.localLanguages.append(result)
                     print("warning key not found: \"\(result.iosKey)\"")
                 }
@@ -269,8 +283,17 @@ extension SyncLanguageVC {
                     continue
                 }
                 if let en = row.sofValue(at: indexEng) {
-                    let vn = row.sofValue(at: indexVN) ?? en
-                    let thai = row.sofValue(at: indexThai) ?? en
+                    var vn = row.sofValue(at: indexVN) ?? en
+                    var thai = row.sofValue(at: indexThai) ?? "[En] \(en)"
+//                    if vn.isEmpty {
+//                        vn = "[En] \(en)"
+//                    }
+//                    if thai.isEmpty {
+//                        thai = "[En] \(en)"
+//                    }
+                    if iosKey == "smf_choose_personal_identification_document_note" {
+                        debugPrint("en: \(en)")
+                    }
                     let itemLangIOS = MultilanguagePlistModel(iosKey: iosKey, aosKey: aosKey,
                                                               tc: [en.correctStringFromGoogleSheetIOS],
                                                               sc: [en.correctStringFromGoogleSheetIOS],
@@ -341,10 +364,19 @@ extension SyncLanguageVC {
         for key in dictEn.keys {
             let iosKey = key.trim
             let valueEN = dictEn[key]?.correctStringFromLocalize ?? ""
-            let valueVN = dictVI[key]?.correctStringFromLocalize ?? valueEN
-            let valueThai = dictThai[key]?.correctStringFromLocalize ?? valueEN
+            var valueVN = dictVI[key]?.correctStringFromLocalize ?? valueEN
+            var valueThai = dictThai[key]?.correctStringFromLocalize ?? valueEN
             let valueTC = dictTC[key]?.correctStringFromLocalize ?? valueEN
             let valueSC = dictSC[key]?.correctStringFromLocalize ?? valueEN
+            if valueVN.isEmpty {
+                valueVN = "[En] \(valueEN)"
+            }
+            if valueThai.isEmpty {
+                valueThai = "[En] \(valueEN)"
+            }
+            if iosKey == "account_register_msg_required_empty_account" {
+                print("valueVN: \(valueVN)")
+            }
             let itemLang = MultilanguagePlistModel(iosKey: iosKey, aosKey: iosKey, tc: [valueTC], sc: [valueSC], en: [valueEN], vn: [valueVN], thai: [valueThai])
 //            print(itemLang.printLanguage(language: .en))
             datas.append(itemLang)

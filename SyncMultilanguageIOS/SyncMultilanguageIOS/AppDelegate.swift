@@ -9,6 +9,7 @@ import UIKit
 import GoogleSignIn
 import Firebase
 import CoreData
+import SOFCommons
 
 public protocol SOFBankAccountBaseInfo {
     var sofBankAccountName: String { get }
@@ -74,6 +75,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Previous sign in restored!")
             }
         }
+        
+        let test = "hello \n b"
+        let rsss = test.correctStringFromGoogleSheetIOS
+        debugPrint(rsss)
+        
+        let item = "Constants.additionalScopes".isFormatCurrencyCorrect
         FirebaseApp.configure()
         account = SOFBankAccount(textString: "Dat")
         print(account?.sofInterested)

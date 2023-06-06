@@ -20,7 +20,7 @@ extension String {
     }
     var correctStringFromLocalize: String {
         return replacingOccurrences(of: "\\", with: "\\\\")
-            .replacingOccurrences(of: "\n", with: "\\n")
+//            .replacingOccurrences(of: "\n", with: "\\n")
             .replacingOccurrences(of: "\"", with: "\\\"")
     }
     var correctStringFromGoogleSheetIOS: String {
@@ -44,6 +44,7 @@ extension String {
             .replacingOccurrences(of: "%4$f", with: "%4$@")
             .replacingOccurrences(of: "%5$f", with: "%5$@")
             .replacingOccurrences(of: "\"", with: "\\\"")
+            .replacingOccurrences(of: "\\\\n", with: "\\n")
             .trimmingCharacters(in: .whitespacesAndNewlines)
     }
     var correctStringFromGoogleSheetAndroid: String {

@@ -1,36 +1,8 @@
 "account_register_msg_email_notmatch_format" = "Định dạng email không đúng. (abc@gmail.com)";
 
-"account_register_msg_required_empty_account" = "Tên đăng nhập không được để trống";
-
-"account_register_msg_required_empty_password" = "Mật khẩu không được để trống";
-
-"account_register_msg_required_empty_password_confirm" = "Mật khẩu xác nhận không được để trống";
-
-"account_register_msg_required_meet_requirement" = "Vui lòng nhập mật khẩu theo đúng yêu cầu";
-
-"account_register_msg_required_password_not_match" = "Mật khẩu xác nhận không giống mật khẩu đã nhập";
-
 "active_card_success" = "Kích hoạt thẻ thành công";
 
 "agree_to_loan" = "Đồng ý vay";
-
-"app_error_message" = "Có lỗi xảy ra. Vui lòng thử lại sau";
-
-"authentication.biometric.enable.later" = "Để sau";
-
-"authentication.otp.error" = "Mã xác thực không đúng";
-
-"authentication.out_of_band.login.action.accept" = "Đồng ý";
-
-"authentication.out_of_band.login.action.deny" = "Từ chối";
-
-"authentication.passcode.confirm" = "Xác nhận";
-
-"authentication.passcode.title" = "Nhập mật mã";
-
-"authentication.password.button.login" = "Đăng nhập";
-
-"auto_renew_setting" = "Cài đặt tự động tái tục";
 
 "beneficiary_account" = "Tài khoản thụ hưởng";
 
@@ -38,59 +10,23 @@
 
 "beneficiary_name" = "Tên người thụ hưởng";
 
-"bill_pay_confirmation_screen_customer_address_label" = "Địa chỉ";
-
-"bill_pay_confirmation_screen_customer_code_label" = "Mã khách hàng";
-
-"bill_pay_confirmation_screen_customer_name_label" = "Tên khách hàng";
-
-"bill_pay_confirmation_screen_payment_period_label" = "Kỳ thanh toán";
-
-"bill_pay_confirmation_screen_payment_update_from_provider" = "Cập nhật từ nhà cung cấp";
-
-"bill_pay_confirmation_screen_transaction_amount_title" = "Số tiền giao dịch";
-
 "bill_pay_home_add_service" = "Thêm Hóa Đơn Mới";
 
 "bill_pay_home_own_bill" = "Hóa Đơn Của Tôi";
-
-"bill_pay_home_title" = "Hoá đơn";
 
 "biometric_face_id" = "xác thực bằng khuôn mặt";
 
 "biometric_face_id_detail" = "Easy login with face authentication";
 
-"biometric_prompt_subtitle" = "Xác thực qua sinh trắc học bằng vân tay hoặc khuôn mặt";
-
 "biometric_touch_id" = "xác thực bằng vân tay";
 
 "biometric_touch_id_detail" = "Easy login with fignerprint authentication";
 
-"bs_bio_guide" = "Chạm vào cảm biến vân tay";
-
-"bs_bio_sub_title" = "Vui lòng quét dấu vân tay của bạn";
-
-"bs_bio_title" = "Xác thực vân tay cho đăng nhập";
-
-"bs_label_cancel" = "Hủy bỏ";
-
 "button_label_create_new_transaction" = "Tạo giao dịch mới";
-
-"card_activation_button_active" = "Kích hoạt thẻ";
 
 "card_activation_guide_to_input_cvv" = "Nhập mã số ở mặt sau của thẻ";
 
 "card_activation_input_cvv" = "Nhập mã CVV";
-
-"card_detail_availability_limit" = "Hạn mức khả dụng";
-
-"card_detail_card_account" = "Tài khoản thẻ";
-
-"card_detail_current_outstanding_balance" = "Dư nợ hiện tại";
-
-"card_detail_guide_safe_payment" = "Hướng dẫn giao dịch thẻ an toàn";
-
-"card_detail_history_transaction" = "Lịch sử giao dịch";
 
 "card_detail_limit_granted" = "Hạn mức được cấp";
 
@@ -101,8 +37,6 @@
 "card_information" = "Thông tin thẻ";
 
 "card_label_atm_withdraw" = "Số tiền của bạn phải là bội số của 50.000 VND. Bạn có thể rút tối đa 5 triệu đồng mỗi giao dịch và 30 triệu đồng mỗi ngày.";
-
-"card_request_valid_cvv" = "Bạn cần nhập đủ mã CVV";
 
 "card_service" = "Dịch vụ thẻ";
 
@@ -116,10 +50,6 @@
 
 "category_hobbies_entertainment" = "Giải trí";
 
-"category_home" = "Nhà cửa";
-
-"category_income" = "Thu nhập";
-
 "category_other_income" = "Thu nhập khác";
 
 "category_retirement_saving" = "Tiết kiệm hưu trí";
@@ -132,27 +62,9 @@
 
 "category_uncategorised" = "Chưa phân loại";
 
-"change_password_label" = "Đổi mật khẩu";
-
-"change_password_label_button" = "Đổi mật khẩu";
-
-"change_password_success" = "Đổi mật khẩu thành công";
-
-"close" = "Đóng";
-
-"common_lorem" = "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out\nprint, graphic or web designs.";
-
-"commonAlertButton" = "Đóng";
-
 "commonAlertContent" = "Hệ thống xảy ra lỗi, vui lòng thử lại sau.";
 
 "commonAlertTitle" = "Thông báo";
-
-"content" = "Nội dung";
-
-"current_device_active" = "Đang hoạt động";
-
-"current_device_disable" = "Không hoạt động";
 
 "days" = "Ngày";
 
@@ -166,22 +78,6 @@
 
 "devices_management_label_login_in_current_device" = "Bạn đang đăng nhập trên thiết bị";
 
-"devices_management_nav_label" = "Quản lý thiết bị";
-
-"enter_passcode" = "Nhập mật mã để xác thực";
-
-"error_mess_current_password_invalid" = "Mật khẩu hiện tại không đúng, vui lòng nhập lại";
-
-"feature_in_development" = "Tính năng đang phát triển";
-
-"forgot_pass_entered_otp_failure" = "Đã quá số lần thử lại.Vui lòng thử lại sau 1 phút";
-
-"forgot_pass_resend_otp_success" = "Gửi mã OTP thành công";
-
-"forgot_password_label" = "Quên mật khẩu";
-
-"from_account" = "Từ tài khoản";
-
 "home_label_account_payment" = "Tài khoản thanh toán";
 
 "home_label_list_account" = "Danh sách";
@@ -194,15 +90,9 @@
 
 "income_per_category" = "Danh mục thu nhập";
 
-"labal_start" = "Bắt đầu";
-
 "label_account" = "Tài khoản:";
 
 "label_account_information" = "Thông Tin Tài Khoản";
-
-"label_account_name" = "Tên tài khoản";
-
-"label_account_type" = "Loại tài khoản";
 
 "label_accured_interest" = "Lãi tạm tính";
 
@@ -210,21 +100,11 @@
 
 "label_add_budgets" = "Tạo mới";
 
-"label_address" = "Địa chỉ";
-
 "label_all" = "Tất cả";
 
 "label_all_your_budgets" = "Ngân sách của bạn";
 
-"label_amount_error_min" = "Nhập số tiền lớn hơn 0";
-
-"label_amount_transaction" = "Số tiền giao dịch";
-
 "label_are_you_agree" = "Bạn có đồng ý?";
-
-"label_authentication" = "Xác thực";
-
-"label_authentication_by_passcode" = "Xác thực bằng Passcode";
 
 "label_available_balance" = "Số dư khả dụng";
 
@@ -237,8 +117,6 @@
 "label_begin_managing_your_budget" = "Hãy bắt đầu quản lý ngân sách của bạn bằng việc phân loại.";
 
 "label_bill" = "Hóa đơn";
-
-"label_billpay_electric" = "Hoá đơn điện";
 
 "label_bills" = "Hóa đơn";
 
@@ -258,15 +136,9 @@
 
 "label_choose_a_monthly_budget" = "Chọn ngân sách hàng tháng";
 
-"label_choose_service_provider" = "Chọn nhà cung cấp";
-
 "label_confirm_new_password" = "Xác nhận mật khẩu mới";
 
 "label_confirm_payment" = "Xác nhận thanh toán";
-
-"label_confirm_payment_info" = "Xác nhận thông tin thanh toán";
-
-"label_confirm_settlement" = "Xác nhận tất toán";
 
 "label_confirm_transaction" = "Xác nhận giao dịch";
 
@@ -284,11 +156,7 @@
 
 "label_customer" = "Khách hàng";
 
-"label_customer_code" = "Mã khách hàng";
-
 "label_customer_id" = "Mã hóa đơn";
-
-"label_customer_name" = "Tên khách hàng";
 
 "label_day_start_loan" = "Ngày vay";
 
@@ -296,21 +164,15 @@
 
 "label_detail" = "Chi tiết";
 
-"label_detail_account" = "Chi tiết tài khoản";
-
 "label_detail_transaction" = "Chi tiết giao dịch";
 
 "label_disbursement_account" = "Tài khoản giải ngân";
 
 "label_do_you_want_delete_budget" = "Bạn có muốn xóa ngân sách này?";
 
-"label_dob" = "Ngày sinh";
-
 "label_edit_budget_amount" = "Chỉnh sửa ngân sách";
 
 "label_edit_the_month_budget" = "Chỉnh sửa ngân sách hàng tháng";
-
-"label_electricity_bill" = "Hóa đơn điện";
 
 "label_email" = "Email";
 
@@ -328,11 +190,7 @@
 
 "label_exchange_rate" = "Tỷ giá";
 
-"label_exit_app" = "Nhấn back một lần nữa để thoát";
-
 "label_expired_date" = "Ngày hết hạn";
-
-"label_feature_in_progress" = "Tính năng đang phát triển. Vui lòng thử lại sau.";
 
 "label_fee" = "Phí";
 
@@ -344,65 +202,31 @@
 
 "label_from" = "Từ";
 
-"label_from_account" = "Từ tài khoản";
-
-"label_gender" = "Giới tính";
-
 "label_help_and_support" = "Liên hệ hỗ trợ";
 
 "label_hide_money" = "Ẩn số tiền";
 
 "label_hotline" = "SmartOSC hotline";
 
-"label_identity" = "CMND/CCCD";
-
 "label_income" = "Thu nhập";
 
 "label_incoming" = "Thu";
-
-"label_input_current_password" = "Nhập mật khẩu hiện tại";
-
-"label_input_customer_code" = "Nhập mã khách hàng";
-
-"label_input_email" = "Nhập email";
-
-"label_input_identity" = "Nhập CMND/CCCD";
-
-"label_input_issuing_date" = "Nhập nơi cấp";
-
-"label_input_new_password" = "Nhập mật khẩu mới";
-
-"label_input_onboarding_address" = "Nhập Số nhà & Tên đường";
-
-"label_input_phone_number" = "Nhập số điện thoại";
-
-"label_interest_amount" = "Tiền lãi";
-
-"label_interest_debt" = "Nợ lãi";
 
 "label_interest_rate" = "Lãi suất";
 
 "label_issuing_date" = "Ngày cấp";
 
-"label_issuing_place" = "Nơi cấp";
-
 "label_loan" = "Khoản vay";
 
 "label_loan_account" = "Tài khoản vay";
-
-"label_loan_due_balance" = "Nợ đến hạn thanh toán";
 
 "label_loan_due_date" = "Ngày đến hạn";
 
 "label_loan_info_date_of_maturity" = "Ngày đến hạn:";
 
-"label_loan_info_due_balance" = "Nợ đến hạn thanh toán";
-
 "label_loan_information" = "Thông Tin Vay";
 
 "label_loan_int" = "Lãi.";
-
-"label_loan_interest" = "Lãi suất";
 
 "label_loan_prin" = "Gốc.";
 
@@ -410,27 +234,13 @@
 
 "label_loan_schedule_loan_balance" = "Dư nợ gốc";
 
-"label_loan_schedule_payment_total" = "Số tiền";
-
-"label_loan_schedule_period_total" = "Kỳ";
-
-"label_loan_term" = "Thời hạn";
-
 "label_loans" = "khoản vay";
 
 "label_login" = "Đăng nhập";
 
-"label_login_success" = "Đăng nhập thành công";
-
-"label_login_user_name" = "Tên đăng nhập";
-
-"label_manage_device_info" = "Tại một thời điểm chỉ có một thiết bị được hoạt động. Để sử dụng ứng dụng trên thiết bị khác, vui lòng gỡ thiết bị hiện tại trước khi đăng nhập thiết bị mới";
-
 "label_manage_devices" = "Quản lý thiết bị";
 
 "label_maturity_date" = "Ngày đáo hạn";
-
-"label_message" = "Tin nhắn";
 
 "label_more" = "More";
 
@@ -448,109 +258,37 @@
 
 "label_not_me" = "Không phải tôi";
 
-"label_noti" = "Thông báo";
-
-"label_notification" = "Thông báo";
-
-"label_onboarding_address" = "Số nhà & Tên đường";
-
-"label_onboarding_district" = "Quận/Huyện";
-
-"label_onboarding_input_province" = "Chọn tỉnh/thành phố";
-
-"label_onboarding_list_service_register" = "Danh sách dịch vụ đăng ký";
-
-"label_onboarding_permanent_address" = "Địa chỉ thường trú";
-
-"label_onboarding_province" = "Tỉnh/Thành phố";
-
-"label_onboarding_referral_code" = "Mã giới thiệu (nếu có)";
-
-"label_onboarding_register_account" = "Đăng ký tài khoản";
-
-"label_onboarding_select_district" = "Chọn quận/huyện";
-
-"label_onboarding_select_service" = "Lựa chọn sản phẩm & dịch vụ";
-
-"label_onboarding_select_transaction_branch" = "Chọn chi nhánh giao dịch";
-
-"label_onboarding_select_ward" = "Chọn phường/xã";
-
-"label_onboarding_term" = "Điều khoản & điều kiện";
-
-"label_onboarding_ward" = "Phường/Xã";
-
-"label_one_time" = "Một lần";
-
 "label_open_account_2" = "Mở Tài Khoản";
 
-"label_open_account_online" = "Mở tài khoản online";
-
-"label_open_branch" = "Chi nhánh mở tài khoản";
-
-"label_open_date" = "Ngày mở tài khoản";
-
 "label_open_new_account" = "Mở tài khoản mới";
-
-"label_open_your_desirable_account_rapidly" = "Mở tài khoản mà bạn muốn thật nhanh chóng";
 
 "label_out_going" = "Chi";
 
 "label_outstanding_balance" = "Dư nợ đến hạn";
 
-"label_overdue_interest_debt" = "Lãi quá hạn (Nếu có)";
-
-"label_paid_amount" = "Số tiền cần thanh toán";
-
 "label_passcode_entered_incorrect" = "Passcode không đúng. Vui lòng thử lại";
 
 "label_password" = "Mật khẩu";
-
-"label_pay_electricity_bill" = "Thanh toán hóa đơn điện";
 
 "label_pay_off_your_credit_card_balance" = "Thanh toán dư nợ thẻ tín dụng";
 
 "label_payment" = "Thanh toán";
 
-"label_payment_amount" = "Số tiền phải trả";
-
-"label_payment_due_date" = "Ngày đến hạn thanh toán";
-
 "label_payment_history" = "Lịch sử trả nợ";
-
-"label_payment_loan_interest_debt" = "Nợ lãi";
-
-"label_payment_loan_principal_amount" = "Nợ gốc";
 
 "label_payment_now" = "Thanh toán ngay";
 
 "label_payment_period" = "Kỳ thanh toán";
 
-"label_payment_services" = "Thanh toán dịch vụ";
-
 "label_payment_template" = "Mẫu chuyển tiền";
 
 "label_personal_finance_management" = "Quản lý tài chính cá nhân";
-
-"label_phone_number" = "Số điện thoại";
-
-"label_principal_amount" = "Tiền gốc";
 
 "label_principal_balance" = "Giá trị sổ";
 
 "label_principal_debt" = "Nợ gốc";
 
-"label_principal_debt_detail_loan" = "Dư nợ gốc";
-
-"label_provider" = "Nhà cung cấp";
-
-"label_quick_loan_content" = "Chương trình dành riêng cho khách hàng thân thiết của SmartOSC bank";
-
-"label_quick_loan_quick_money" = "Ưu đãi vay ngay - Tiền về liền tay";
-
 "label_re_enter_passcode" = "Nhập lại passcode";
-
-"label_reenter_password" = "Nhập lại mật khẩu";
 
 "label_register_bimometric" = "Bật %@";
 
@@ -564,21 +302,11 @@
 
 "label_save_customer_info" = "Lưu hóa đơn cho lần thanh toán tiếp theo";
 
-"label_saving_amount_total" = "Tổng giá trị";
-
 "label_schedule_transfer" = "Chuyển tiền theo lịch";
 
 "label_security_guide" = "Security guide";
 
-"label_select_gender" = "Chọn giới tính";
-
-"label_select_identity_type" = "Chọn loại giấy tờ tùy thân";
-
 "label_select_your_budget_category" = "Chọn loại ngân sách của bạn";
-
-"label_service_not_support" = "Dịch vụ chưa hỗ trợ";
-
-"label_service_provider" = "Nhà cung cấp";
 
 "label_set_as_default_account" = "Đặt làm tài khoản mặc định";
 
@@ -594,8 +322,6 @@
 
 "label_setting_dark_mode" = "Thay đổi giao diện tối";
 
-"label_setting_link_account" = "Liên kết số điện thoại";
-
 "label_setting_transfer_limit" = "Cài đặt hạn mức";
 
 "label_settlement" = "Tất Toán";
@@ -607,12 +333,6 @@
 "label_spend_over" = "Vượt quá %@";
 
 "label_spend_per" = "Đã chi %@ trên %@";
-
-"label_status_paid" = "Đã thanh toán";
-
-"label_status_undue" = "Chưa đến kỳ thanh toán";
-
-"label_status_unpaid" = "Chưa thanh toán";
 
 "label_target" = "mục tiêu";
 
@@ -628,45 +348,25 @@
 
 "label_total_income" = "Tổng thu";
 
-"label_total_loan_balance" = "Tổng dư nợ";
-
 "label_total_spend" = "Tổng:";
 
 "label_total_spending" = "Tổng chi";
 
 "label_transaction" = "giao dịch";
 
-"label_transaction_code" = "Mã giao dịch";
-
-"label_transaction_history" = "Tra Cứu Giao Dịch";
-
 "label_transaction_id" = "Mã giao dịch";
 
 "label_transaction_income" = "Tiền vào";
-
-"label_transaction_note" = "Nội dung chuyển tiền";
 
 "label_transaction_outcome" = "Tiền ra";
 
 "label_transaction_pending" = "Giao dịch chờ xử lý";
 
-"label_transaction_status" = "Trạng thái";
-
-"label_transaction_time" = "Thời gian thực hiện";
-
-"label_transaction_type" = "Cách thức";
-
-"label_transfer_money" = "Chuyển tiền";
-
 "label_transferred_content" = "You have transferred %@ today";
 
 "label_update" = "Cập nhật";
 
-"label_update_from_provider" = "Cập nhật từ nhà cung cấp";
-
 "label_user_guide" = "User guide";
-
-"label_verify_personal_information" = "Xác minh thông tin cá nhân";
 
 "label_view_detail" = "Xem chi tiết";
 
@@ -674,71 +374,33 @@
 
 "label_withdraw" = "Rút tiền ATM";
 
-"label_withdraw_atm" = "Yêu cầu rút tiền ATM";
-
-"label_you_confirm_withdraw" = "Bạn xác nhận rút";
-
 "lable_transfer_limit" = "Transfer limit";
-
-"loan_confirmation_label_confirm" = "Xác nhận khoản vay";
-
-"loan_create_detail_term_and_condition" = "Điều khoản và điều kiện về vay vốn SmartOSC";
 
 "loan_create_label_disbursement_account" = "Tài khoản giải ngân";
 
-"loan_create_nav_label" = "Khởi tạo khoản vay";
-
 "loan_labal_create_loan_success" = "Tạo khoản vay thành công";
 
-"loan_label_create_loan_failure" = "Tạo khoản vay chưa thành công!. Vui lòng thử lại sau";
-
 "loan_management_label_loan_product" = "Sản phẩm";
-
-"loan_management_label_loan_term" = "Thời hạn vay";
 
 "loan_management_label_month_payment_date" = "Ngày trả nợ hàng tháng";
 
 "loan_management_label_quick_loan" = "Vay siêu tốc SmartOSC";
 
-"loan_one_month" = "1 tháng";
-
 "loan_service_term_text" = "Bằng cách nhấn Đồng ý vay, bạn xác nhận đồng ý với Điều khoản và điều kiện về vay vốn SmartOSC";
 
 "loan_slider_label_loan_amount" = "Số tiền vay";
 
-"loan_three_month" = "3 tháng";
-
-"loan_two_month" = "2 tháng";
-
-"login_can_not_regconize_finger_print_label" = "Không nhận được vân tay";
-
-"login_regconize_finger_print_success_label" = "Đã xác minh";
-
 "menu_button_add_category" = "Thêm danh mục";
-
-"menu_button_go_to_home" = "Trang chủ";
-
-"menu_button_save_image" = "Lưu ảnh";
 
 "menu_button_save_template" = "Lưu mẫu chuyển tiền";
 
 "menu_button_share_image" = "Chia sẻ";
 
-"menu_button_spent_management" = "Quản lý chi tiêu";
-
-"menu_button_top_up" = "Nạp tiền";
-
-"menu_button_transfer_again" = "Thực hiện lại";
-
 "menu_lb_home" = "Trang chủ";
-
-"menu_lb_settings" = "Cài đặt";
 
 "menu_lb_transfer_money" = "Chuyển tiền";
 
 "message_no_internet" = "Không có kết nối mạng";
-
-"million" = "triệu";
 
 "money_transfer_form" = "Mẫu chuyển tiền";
 
@@ -750,31 +412,9 @@
 
 "months" = "Tháng";
 
-"nav_bar_label_activation_card" = "Kích hoạt thẻ";
-
-"npt_label_not_enough_money" = "Tài khoản không đủ số dư để thực hiện giao dịch";
-
-"npt_label_transfer_citad" = "Chuyển tiền thường";
-
-"npt_label_transfer_identity" = "Qua số CMND/CCCD";
-
-"npt_label_transfer_internal" = "Trong SmartOSC eBank";
-
 "npt_label_transfer_napas" = "Chuyển tiền 24/7";
 
 "npt_label_transfer_own" = "Chuyển tiền chính chủ";
-
-"npt_label_transfer_qr" = "Chuyển tiền QR CODE";
-
-"npt_label_validation_money" = "Số tiền phải lớn hơn hoặc bằng 50,000 và nhỏ hơn hoặc bằng 5,000,000";
-
-"npt_transfer_all" = "Tất cả";
-
-"npt_transfer_recently" = "chuyển gần đây";
-
-"obr_label_cancel" = "Huỷ";
-
-"obr_label_content_choose_identity" = "Quý khách vui lòng lựa chọn loại \ngiấy tờ tùy thân";
 
 "obr_label_content_congrats_dialog" = "Chúc mừng!!!";
 
@@ -786,21 +426,7 @@
 
 "obr_label_continue" = "Tiếp Tục";
 
-"obr_label_continue_input" = "Tiếp Tục Điền";
-
-"obr_label_description_choose_identity" = "- Giấy tờ còn hạn sử dụng, không sử dụng bản scan, photocopy. \n- Ảnh chụp cần rõ nét, không bị mờ, mất góc hoặc lóa sáng \n- Nghiêm cấm việc sử dụng giấy tờ giả mạo, không chính chủ. \n- Khách hàng chịu hoàn toàn trách nhiệm trước pháp luật về hình ảnh cung cấp.";
-
-"obr_label_description_input_phone_number" = "Quý khách vui lòng cung cấp số điện thoại để đăng ký sử dụng dịch vụ";
-
-"obr_label_description_missing_data_create_account" = "Nếu thoát khỏi trang này quý khách sẽ phải xác minh lại tài khoản từ đầu.\n Quý khách có chắn chắn muốn thoát không?";
-
 "obr_label_description_register_account" = "Mật khẩu cần có 6-8 ký tự, bao gồm số, chữ thường, chữ hoa và ký tự đặc biệt";
-
-"obr_label_exit" = "Thoát";
-
-"obr_label_identity" = "Căn cước/ Chứng minh nhân dân";
-
-"obr_label_note" = "Lưu ý:";
 
 "obr_label_ok" = "Đồng Ý";
 
@@ -808,83 +434,23 @@
 
 "obr_label_otp_input" = "Nhập mã OTP";
 
-"obr_label_passport" = "Hộ chiếu";
-
-"obr_label_phone_number" = "Số điện thoại";
-
 "obr_label_resend_otp" = "Gửi lại mã OTP";
-
-"obr_label_select_value" = "Chọn giá trị";
-
-"ocr_confirm_msg_date_identity_document_required_empty" = "Vui lòng chọn ngày cấp";
-
-"ocr_confirm_msg_dob_required_empty" = "Vui lòng chọn ngày sinh";
-
-"ocr_confirm_msg_full_name_required_empty" = "Vui lòng điền họ và tên";
-
-"ocr_confirm_msg_gender_required_empty" = "Vui lòng chọn giới tính";
-
-"ocr_confirm_msg_identity_document_required_empty" = "Vui lòng điền thông tin CMND/CCCD";
-
-"ocr_confirm_msg_identity_document_required_format" = "Vui lòng điền đúng định dạng CMND/CCCD";
-
-"ocr_confirm_msg_permanent_address_required_empty" = "Vui lòng điền số nhà & tên đường";
-
-"ocr_confirm_msg_permanent_district_required_empty" = "Vui lòng chọn quận/huyện";
-
-"ocr_confirm_msg_permanent_province_city_required_empty" = "Vui lòng chọn tỉnh/thành phố";
-
-"ocr_confirm_msg_permanent_ward_required_empty" = "Vui lòng chọn phường/xã";
-
-"ocr_confirm_msg_place_identity_document_required_empty" = "Vui lòng chọn nơi cấp";
-
-"payment_bill_failure" = "Thanh toán hóa đơn chưa thành công!. Vui lòng thử lại sau";
-
-"payment_bill_success" = "Thanh toán hóa đơn thành công!";
 
 "per_month" = "hàng tháng";
 
-"phonenumber_msg_required_empty" = "Vui lòng điền vào số điện thoại";
-
-"phonenumber_msg_required_phone_length" = "Bạn cần nhập số điện thoại gồm 10 số, bắt đầu bởi số 0.";
-
 "save" = "Lưu";
-
-"save_payment_template_success" = "Lưu mẫu chuyển tiền thành công";
-
-"select_product_field_branch_msg_required_empty" = "Vui lòng chọn chi nhánh";
 
 "service_eletricity" = "Điện";
 
-"service_hospital" = "Viện Phí";
-
-"service_insurrance" = "Bảo Hiểm";
-
 "service_internet" = "Cước Internet";
-
-"service_landline_phone" = "Điện Thoại Cố Định";
-
-"service_phone" = "Điện Thoại";
-
-"service_tax_fee" = "Thuế,Phí";
-
-"service_train" = "Vé Tàu";
-
-"service_tuition" = "Học Phí";
 
 "service_tv" = "Truyền Hình";
 
 "service_water" = "Nước";
 
-"servie_fight" = "Vé Máy Bay";
-
 "settelement" = "Tất toán sổ tiết kiệm thành công";
 
 "settelement_account_receive" = "Tài khoản nhận tiền";
-
-"settelement_transaction_number" = "Số giao dịch";
-
-"settlement_amount" = "Số tiền nhận";
 
 "smf_label_account_beneficiary" = "Tài khoản thụ hưởng";
 
@@ -894,27 +460,11 @@
 
 "smf_label_cancel" = "Huỷ bỏ";
 
-"smf_label_cancel_verify_transaction" = "Đã huỷ xác thực giao dịch";
-
-"smf_label_content" = "Nội dung";
-
 "smf_label_delete" = "Xoá";
 
 "smf_label_empty" = "Không có dữ liệu";
 
-"smf_label_frequency" = "Tần suất";
-
 "smf_label_mode_transfer" = "Loại chuyển tiền";
-
-"smf_label_name_beneficiary" = "Tên người thụ hưởng";
-
-"smf_label_notification" = "Thông báo";
-
-"smf_label_status" = "Trạng thái";
-
-"smf_label_title_owner" = "Cá nhân";
-
-"smf_label_transaction_date" = "Ngày thực hiện";
 
 "smf_label_transfer" = "Chuyển tiền";
 
@@ -922,247 +472,15 @@
 
 "smf_label_transfer_services_contact" = "Danh Bạ";
 
-"smf_label_transfer_services_schedule" = "Lệnh Chuyển Tiền Theo Lịch";
-
-"smf_label_transfer_services_template" = "Mẫu chuyển tiền đã lưu";
-
 "smf_label_transfer_within" = "Chuyển tiền trong SmartOSC";
 
-"smf_label_type_transfer" = "Hình thức chuyển";
-
-"smf_label_unknown_error" = "Có lỗi xảy ra";
-
-"sof_account_details" = "Chi tiết tài khoản";
-
-"sof_account_holder" = "Chủ tài khoản";
-
-"sof_account_number" = "%@ tài khoản";
-
-"sof_after" = "After";
-
-"sof_after_times" = "After %@ times";
-
-"sof_agree" = "Đồng ý";
-
-"sof_annual_fee" = "Phí thường niên";
-
-"sof_apply" = "Apply";
-
-"sof_biweekly" = "Biweekly";
-
-"sof_book_name" = "Tên sổ tiết kiệm";
-
-"sof_branch" = "Branch";
-
-"sof_cancel_request" = "Huỷ giao dịch";
-
-"sof_cancel_request_confirm" = "Bạn có chắc chắn muốn huỷ yêu cầu rút tiền ATM?";
-
-"sof_card_active" = "Hoạt động";
-
-"sof_card_locked" = "Đã khoá";
-
-"sof_card_number" = "Số thẻ";
-
-"sof_card_usage" = "Đã chi";
-
-"sof_cardholder_information" = "Thông tin phát hành thẻ";
-
-"sof_cardless_withdrawal_atm" = "Rút tiền từ ATM";
-
-"sof_cardless_withdrawal_atm_empty" = "Bạn không có yêu cầu rút tiền đang chờ xử lý.";
-
-"sof_change_pin" = "Đổi mã PIN";
-
-"sof_change_pin_description" = "Đổi mã PIN của bạn";
-
-"sof_compare_card" = "So sánh thẻ";
-
-"sof_current_daily_transfer_limit" = "Giới hạn chuyển khoản hàng ngày hiện tại của bạn";
-
-"sof_daily" = "Daily";
-
-"sof_day" = "ngày";
-
-"sof_done" = "Hoàn thành";
-
-"sof_earning_requirements" = "Yêu cầu thu nhập";
-
-"sof_end_date" = "End date";
-
-"sof_end_type" = "End type";
-
-"sof_enjoy_safe_and_secure_shopping" = "Thỏa thích chi tiêu mua sắm an toàn, bảo mật";
-
-"sof_estimated_interest" = "Tiền lãi ước tính";
-
-"sof_expired" = "Hết hạn";
-
-"sof_generate_on" = "Ngày tạo";
-
-"sof_how_does_it_work" = "How does it work?";
-
-"sof_inactive" = "Chưa kích hoạt";
-
-"sof_interbank_transfer" = "Interbank transfer";
-
-"sof_investment" = "Investment";
-
-"sof_investment_description" = "Transfer to securities account, or deposit money";
-
-"sof_issuance_fee" = "Phí phát hành";
-
-"sof_line_of_credit" = "Hạn mức";
-
-"sof_link_mobile_number" = "Liên kết số điện thoại";
-
-"sof_link_mobile_number_instruction" = "If the payer also uses Smartbank, they can transfer money to your current account via the phone number";
-
-"sof_lock_card" = "Khoá thẻ";
-
-"sof_lock_card_description" = "Tất cả các giao dịch thẻ sẽ bị chặn";
-
-"sof_manage_card" = "Quản lý thẻ";
-
-"sof_maturity_instruction" = "Hình thức nhận lãi tiết kiệm";
-
-"sof_maximum_payment" = "Thanh toán tối đa";
-
-"sof_minimum_payment" = "Thanh toán tối thiểu";
-
-"sof_monthly" = "Monthly";
-
-"sof_never" = "Never";
-
-"sof_nickname_optional" = "Nickname (optional)";
-
-"sof_on" = "On %@";
-
-"sof_on_date" = "On date";
-
-"sof_once" = "Once";
-
-"sof_other_amount" = "Số tiền khác";
-
-"sof_outstanding_balance" = "Dư nợ cuối kỳ";
-
-"sof_pay_off" = "Thanh toán dư nợ ";
-
-"sof_pay_off_successful" = "Thanh toán dư nợ thành công";
-
-"sof_paybills_topup" = "Pay bills and top-ups";
-
-"sof_paybills_topup_description" = "Pay for mobile, electricity, waters, credit card\nand more";
-
-"sof_payment_due_date" = "Ngày đến hạn:";
-
-"sof_province" = "Province";
-
-"sof_quarterly" = "Quarterly";
-
-"sof_repeat" = "Repeat";
-
-"sof_replace_card" = "Thay thế thẻ";
-
-"sof_replace_card_description" = "Thay thế thẻ bị mất, bị đánh cắp hoặc bị hư hỏng";
-
-"sof_request_new_card" = "Tạo thẻ mới";
-
-"sof_request_new_card_now" = "Mở thẻ ngay";
-
-"sof_save_beneficiary" = "Save beneficiary";
-
-"sof_schedule_transfer_info" = "Schedule transfer information";
-
-"sof_scheduled_transfer" = "Scheduled transfer";
-
-"sof_scheduled_transfer_description" = "List of all scheduled transfers";
-
-"sof_select_daily_transfer_limit" = "Chọn giới hạn chuyển tiền mới của bạn";
-
-"sof_select_debit_account" = "Chọn nguồn tiền";
-
-"sof_select_to_transfer_quickly" = "Select to transfer quickly";
-
-"sof_set_card_limit" = "Đặt hạn mức sử dụng thẻ";
-
-"sof_settle_message" = "Sổ chưa đến kỳ hạn. Lãi nhận được có thể thấp hơn lãi tạm tính. Bạn có muốn tất toán?";
-
-"sof_start_date" = "Start Date";
-
-"sof_start_on" = "Start on";
-
-"sof_term_and_interest" = "Kỳ hạn và lãi suất";
-
-"sof_to_colon" = "Tới:";
-
-"sof_total_balance" = "Tổng số dư";
-
-"sof_transaction_infomation" = "Transaction Information";
-
-"sof_transfer_again" = "Thực hiện lại";
-
-"sof_transfer_interbank" = "Transfer Interbank";
-
-"sof_transfer_interbank_description" = "Transfer to interbank account,";
-
-"sof_transfer_on" = "Transfer on";
-
-"sof_transfer_template" = "Transfer template";
-
-"sof_transfer_template_description" = "Quick transfer using available templates";
-
-"sof_transfer_within_thebank" = "Transfer within the bank";
-
-"sof_transfer_within_thebank_description" = "Transfer via account, phone number of ATM card number";
-
-"sof_weekly" = "Weekly";
-
-"sof_with_account" = "Tài khoản";
-
-"sof_withdrawal_instruction" = "Vui lòng đến máy ATM,\nnhập mã PIN này và làm theo hướng dẫn.";
-
-"sof_withdrawal_pin" = "Mã PIN rút tiền của bạn";
-
-"sof_withdrawal_request_successful" = "Yêu cầu rút tiền thành công!";
-
-"sof_within_my_account" = "Within my account";
-
-"sof_yearly" = "Yearly";
-
 "spend_per_category" = "Danh mục chi tiêu";
-
-"str_active_card_now" = "[vi]";
-
-"str_back_to_home_page" = "Quay về trang chủ";
-
-"str_btn_verify" = "Xác thực";
-
-"str_card_compare_label" = "So sánh thẻ";
-
-"str_card_input_email_label" = "Nhập email";
-
-"str_card_issue_fee_free" = "Miễn phí";
-
-"str_card_owner_info_label" = "Thông tin chủ thẻ";
-
-"str_change_language" = "Thay đổi ngôn ngữ";
-
-"str_choose" = "Chọn";
 
 "str_close" = "Đóng";
 
 "str_confirm" = "Xác nhận";
 
-"str_confirm_transaction" = "Xác thực giao dịch";
-
 "str_credit_card" = "Thẻ tín dụng";
-
-"str_credit_card_label" = "Thẻ tín dụng";
-
-"str_debit_card" = "Thẻ ghi nợ";
-
-"str_debit_card_label" = "Thẻ ghi nợ";
 
 "str_edit" = "Chỉnh sửa";
 
@@ -1172,23 +490,9 @@
 
 "str_feature_create_card_label_congrat" = "Chúc mừng! Bạn đã \nhoàn tất việc đăng ký";
 
-"str_feature_create_card_label_request_open_card" = "Yêu cầu mờ thẻ thành công";
-
 "str_feature_create_card_label_term_confirm" = "Bằng cách nhấn xác nhận, bạn đồng ý với điều khoản và điều kiện về Thẻ tín dụng SmartOSC";
 
-"str_feature_create_card_label_view_contract" = "Xem hợp đồng thẻ";
-
-"str_history_transaction_category" = "Loại giao dịch";
-
-"str_history_transaction_filter" = "Lọc:";
-
-"str_history_transaction_filter_3_month_ago" = "3 tháng gần nhất";
-
-"str_home_change_money_source" = "Thay Đổi Nguồn Tiền";
-
 "str_home_service_atm_withdraw" = "Rút tiền ATM";
-
-"str_home_service_bill_pay" = "Hóa đơn";
 
 "str_home_service_loan" = "Khoản vay";
 
@@ -1196,13 +500,9 @@
 
 "str_home_service_pocket" = "Tích lũy như ý";
 
-"str_home_service_read_more" = "Xem thêm >";
-
 "str_home_service_save_money" = "Tiết kiệm";
 
 "str_home_service_top_up_mobile_card" = "Nạp điện thoại";
-
-"str_home_service_transfer_money" = "Chuyển tiền";
 
 "str_identity_go_to_store_to_update_label" = "Nếu bạn đã có số CMND/CCCD mới, vui lòng đến chi nhánh SmartOSC gần nhất để cập nhật";
 
@@ -1210,57 +510,23 @@
 
 "str_log_out" = "Đăng xuất";
 
-"str_no_data" = "Không có dữ liệu";
-
 "str_owner_card_name_label" = "Tên chủ thẻ";
 
 "str_prepare_card_label" = "Đang chuẩn bị thẻ, xin vui lòng đợi...";
 
-"str_request_create_card_olnine" = "Yêu cầu mở thẻ Online";
-
 "str_search_hint" = "Tìm kiếm";
-
-"str_setting_account_management" = "Quản lý tài khoản";
 
 "str_setting_change_language" = "Chọn ngôn ngữ";
 
-"str_setting_login_with_biometric" = "Đăng nhập với Touch/ Face ID";
-
-"str_setting_noti_balance" = "Thông báo số dư";
-
 "str_setting_setup_security" = "Cài đặt bảo mật";
 
-"str_setting_user_info" = "Thông tin cá nhân";
-
 "str_transfer_money_account_number_label" = "TK ngân hàng";
-
-"str_transfer_money_add_memo" = "Nội dung ( không bắt buộc)";
-
-"str_transfer_money_amount_transfer" = "Số tiền";
-
-"str_transfer_money_atm_card_label" = "Thẻ ATM";
-
-"str_transfer_money_bank_account_name" = "Tên TK ngân hàng";
 
 "str_transfer_money_bank_account_number_label" = "Số tài khoản";
 
 "str_transfer_money_choose_bank" = "Chọn ngân hàng";
 
-"str_transfer_money_continue" = "Tiếp tục";
-
 "str_transfer_money_execution_date" = "Ngày thực hiện";
-
-"str_transfer_money_frequency" = "Tần suất";
-
-"str_transfer_money_from" = "Từ :";
-
-"str_transfer_money_phone_number_label" = "Số điện thoại";
-
-"str_transfer_money_recipient_name_label" = "Tên người nhận";
-
-"str_transfer_money_save_account" = "Lưu tài khoản người thụ hưởng";
-
-"str_transfer_money_schedule" = "Đặt lệnh chuyển tiền";
 
 "str_transfer_money_select_branch" = "Chọn chi nhánh";
 
@@ -1268,55 +534,17 @@
 
 "str_transfer_money_select_contact" = "Chọn người thụ hưởng";
 
-"str_transfer_money_to" = "Tới :";
-
 "str_wait_active_content" = "Bạn phải kích hoạt thẻ để sử dụng các chức năng.";
 
 "str_wait_to_active" = "Chờ kích hoạt";
 
-"str_welcome_home" = "Xin chào ,";
-
-"string_hello" = "Xin chào,";
-
-"string_onboarding_current_address" = "Địa chỉ hiện tại";
-
-"string_onboarding_same_address" = "Địa chỉ nơi ở hiện tại trùng với địa chỉ thường trú";
-
-"string_onboarding_term_confirm" = "Tôi đồng ý với Điều khoản & Điều kiện Dịch vụ Ngân hàng điện tử của SmartOSC";
-
 "string_otp_send_to_phone_number" = "Mã OTP xác thực đã được gửi tới số điện thoại";
-
-"term_and_interest_rate" = "Kỳ hạn & lãi suất";
 
 "term_deposit_confirm_label" = "Xác nhận mở sổ";
 
-"term_deposit_confirm_label_amount" = "Số tiền";
-
-"term_deposit_confirm_label_date_payment" = "Ngày đến hạn";
-
 "term_deposit_confirm_label_receiving_account" = "Tài khoản nhận tiền";
 
-"term_deposit_confirm_label_renew_terms" = "Tùy chọn tái tục";
-
-"term_deposit_confirm_label_terms_and_interest" = "Kỳ hạn & Lãi suất";
-
-"term_deposit_estimate_rate" = "Lãi tạm tính cuối kỳ";
-
-"term_deposit_get_accounts_empty" = "Không lấy được danh sách tài khoản";
-
-"term_deposit_get_terms_empty" = "Không lấy được kỳ hạn";
-
 "term_deposit_labal_create_saving_account_success" = "Tạo sổ thành công";
-
-"term_deposit_label_account" = "Tài khoản trích tiền";
-
-"term_deposit_label_amount" = "Số tiền";
-
-"term_deposit_label_create_saving_account_failure" = "Tạo sổ chưa thành công!. Vui lòng thử lại sau";
-
-"term_deposit_label_saving_account" = "Tài khoản tiết kiệm";
-
-"term_deposit_label_select_term" = "Chọn kỳ hạn";
 
 "term_deposit_open_saving_account" = "Mở sổ tiết kiệm";
 
@@ -1328,13 +556,9 @@
 
 "term_deposit_term_label" = "Kỳ hạn";
 
-"text_one_month" = "1 tháng";
-
 "text_six_months" = "6 tháng";
 
 "text_twelve_months" = "12 tháng";
-
-"title_hello" = "Welcome back,";
 
 "title_username" = "Username";
 
@@ -1344,17 +568,7 @@
 
 "user_profile_label_full_name" = "Họ và tên";
 
-"user_profile_label_home" = "Thông tin cá nhân";
-
 "user_profile_label_identity_card_number" = "CCCD";
-
-"user_profile_label_login_name" = "Tên đăng nhập";
-
-"user_profile_label_phone_number" = "Số điện thoại";
-
-"vnd_currency_formatter" = "$";
-
-"warning_need_entered_full_information" = "Vui lòng nhập đủ thông tin";
 
 "weeks" = "Tuần";
 
@@ -1362,39 +576,15 @@
 
 "years" = "Năm";
 
-"app_name" = "";
+"bill_pay_confirmation_screen_customer_name_label" = "";
 
-"click" = "";
-
-"default_notification_channel_id" = "";
-
-"fcm_message" = "";
-
-"label_auto_register_bill_pay" = "";
+"bill_pay_home_title" = "";
 
 "label_back_to_home_page" = "";
 
-"label_bill_customer_id" = "";
-
-"label_bill_customer_name" = "";
-
-"label_bill_paid_amount" = "";
-
-"label_bill_partial_paid_warning" = "";
-
-"label_bill_service" = "";
-
 "label_bill_status_paid" = "";
 
-"label_bill_status_partial_paid" = "";
-
 "label_bill_status_unpaid" = "";
-
-"label_bill_total_bill_amount" = "";
-
-"label_billpay_paid_amount" = "";
-
-"label_cancel_registration_auto_bill_pay" = "";
 
 "label_card_choosen_enjoy" = "";
 
@@ -1408,41 +598,17 @@
 
 "label_change_pin_card_description" = "";
 
-"label_compare_card" = "";
-
-"label_confirm_term_deposit" = "";
-
 "label_content_confirm_settlement" = "";
 
 "label_credit_card_number" = "";
 
 "label_credit_card_pay_off_description" = "";
 
-"label_credit_card_pay_off_empty" = "";
-
-"label_credit_card_pay_off_success" = "";
-
 "label_customer_id_bill_pay" = "";
-
-"label_customer_name_bill_pay" = "";
-
-"label_deposit_cumulative" = "";
 
 "label_description_link_mobile" = "";
 
-"label_description_must_link_other_account" = "";
-
-"label_dialog_confirm_auto_bill_content" = "";
-
-"label_dialog_confirm_auto_bill_description" = "";
-
-"label_dialog_confirm_auto_bill_positive" = "";
-
-"label_edit_registration_information" = "";
-
 "label_empty_atm_withdraw_description" = "";
-
-"label_end_after" = "";
 
 "label_from_account_auto_bill_pay" = "";
 
@@ -1452,39 +618,17 @@
 
 "label_link_phone_number_to_account" = "";
 
-"label_loan_detail" = "";
+"label_loan_info_due_balance" = "";
 
 "label_lock_card" = "";
 
 "label_lock_card_description" = "";
 
-"label_maximum_bill_payment_amount" = "";
-
-"label_more_service" = "";
-
-"label_no_results_found" = "";
-
-"label_oob_web_confirm_transaction" = "";
-
-"label_oob_web_login_at_time" = "";
-
-"label_oob_web_login_button_negative" = "";
-
-"label_oob_web_login_button_positive" = "";
-
-"label_oob_web_transaction_confirm" = "";
-
 "label_pay" = "";
 
 "label_pay_off" = "";
 
-"label_question_continue" = "";
-
-"label_register_auto_bill_date" = "";
-
-"label_register_auto_bill_pay" = "";
-
-"label_register_auto_payment_successfully" = "";
+"label_payment_loan_interest_debt" = "";
 
 "label_replace_card" = "";
 
@@ -1494,14 +638,6 @@
 
 "label_schedule_information" = "";
 
-"label_select_service" = "";
-
-"label_select_services_type" = "";
-
-"label_services" = "";
-
-"label_setting_auto_pay_bill" = "";
-
 "label_start_on" = "";
 
 "label_status_card_active" = "";
@@ -1510,16 +646,166 @@
 
 "label_status_card_inactive" = "";
 
-"label_status_partial_paid" = "";
-
-"label_term_auto_bill" = "";
-
 "label_total_balance" = "";
 
-"label_total_number_card" = "";
+"label_transaction_history" = "";
 
 "label_transfer_on" = "";
 
-"label_update_success" = "";
+"loan_management_label_loan_term" = "";
 
-"label_your_withdrawal_pin" = "";
+"loan_one_month" = "";
+
+"nav_bar_label_activation_card" = "";
+
+"obr_label_phone_number" = "";
+
+"smf_account_details" = "";
+
+"smf_account_holder" = "";
+
+"smf_account_number" = "";
+
+"smf_after" = "";
+
+"smf_after_times" = "";
+
+"smf_annual_fee" = "";
+
+"smf_apply" = "";
+
+"smf_biweekly" = "";
+
+"smf_book_name" = "";
+
+"smf_branch" = "";
+
+"smf_cancel_request" = "";
+
+"smf_cancel_request_confirm" = "";
+
+"smf_compare_card" = "";
+
+"smf_current_daily_transfer_limit" = "";
+
+"smf_daily" = "";
+
+"smf_day" = "";
+
+"smf_done" = "";
+
+"smf_earning_requirements" = "";
+
+"smf_end_type" = "";
+
+"smf_estimated_interest" = "";
+
+"smf_expired" = "";
+
+"smf_how_does_it_work" = "";
+
+"smf_interbank_transfer" = "";
+
+"smf_investment" = "";
+
+"smf_investment_description" = "";
+
+"smf_issuance_fee" = "";
+
+"smf_label_status" = "";
+
+"smf_line_of_credit" = "";
+
+"smf_manage_card" = "";
+
+"smf_maturity_instruction" = "";
+
+"smf_maximum_payment" = "";
+
+"smf_minimum_payment" = "";
+
+"smf_monthly" = "";
+
+"smf_never" = "";
+
+"smf_nickname_optional" = "";
+
+"smf_on" = "";
+
+"smf_on_date" = "";
+
+"smf_once" = "";
+
+"smf_other_amount" = "";
+
+"smf_pay_off_successful" = "";
+
+"smf_paybills_topup" = "";
+
+"smf_paybills_topup_description" = "";
+
+"smf_payment_due_date" = "";
+
+"smf_province" = "";
+
+"smf_quarterly" = "";
+
+"smf_repeat" = "";
+
+"smf_request_new_card" = "";
+
+"smf_save_beneficiary" = "";
+
+"smf_scheduled_transfer_description" = "";
+
+"smf_select_daily_transfer_limit" = "";
+
+"smf_select_debit_account" = "";
+
+"smf_select_to_transfer_quickly" = "";
+
+"smf_start_date" = "";
+
+"smf_term_and_interest" = "";
+
+"smf_to_colon" = "";
+
+"smf_transaction_infomation" = "";
+
+"smf_transfer_again" = "";
+
+"smf_transfer_interbank" = "";
+
+"smf_transfer_interbank_description" = "";
+
+"smf_transfer_template" = "";
+
+"smf_transfer_template_description" = "";
+
+"smf_transfer_within_thebank" = "";
+
+"smf_transfer_within_thebank_description" = "";
+
+"smf_weekly" = "";
+
+"smf_with_account" = "";
+
+"smf_withdrawal_instruction" = "";
+
+"smf_withdrawal_pin" = "";
+
+"smf_withdrawal_request_successful" = "";
+
+"smf_within_my_account" = "";
+
+"smf_yearly" = "";
+
+"str_card_owner_info_label" = "";
+
+"str_transfer_money_bank_account_name" = "";
+
+"str_transfer_money_frequency" = "";
+
+"term_deposit_confirm_label_date_payment" = "";
+
+"user_profile_label_home" = "";
