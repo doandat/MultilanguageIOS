@@ -10,7 +10,7 @@ import Foundation
 enum LanguageKey: String {
     case en
     case vi
-    case thai
+    case ko
     case tc
     case sc
     
@@ -20,8 +20,8 @@ enum LanguageKey: String {
             return "en"
         case .vi:
             return "vi"
-        case .thai:
-            return "th"
+        case .ko:
+            return "ko"
         case .tc:
             return "zh-Hant"
         case .sc:
@@ -58,7 +58,7 @@ class MultilanguageModel {
             return "\"\(key)\" = \"\(en)\";"
         case .vi:
             return "\"\(key)\" = \"\(vi)\";"
-        case .thai:
+        case .ko:
             return "\"\(key)\" = \"\(thai)\";"
         case .tc:
             return "\"\(key)\" = \"\(tc)\";"

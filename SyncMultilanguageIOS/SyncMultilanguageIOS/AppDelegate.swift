@@ -82,16 +82,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let item = "Constants.additionalScopes".isFormatCurrencyCorrect
         FirebaseApp.configure()
-        account = SOFBankAccount(textString: "Dat")
-        print(account?.sofInterested)
-        print(account?.sofTerm)
-        print(account?.sofBankAccountName)
-        print(account?.capB)
+//        account = SOFBankAccount(textString: "Dat")
+//        print(account?.sofInterested)
+//        print(account?.sofTerm)
+//        print(account?.sofBankAccountName)
+//        print(account?.capB)
         startViewController()
         
-        loanAccount = account
+//        loanAccount = account
         
-        print(loanAccount?.sofTerm)
+//        readCurrency()
         return true
     }
     
@@ -120,8 +120,98 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If not handled by this app, return false.
         return false
     }
-    
+    func loadJson<T: Codable>(filename fileName: String) -> [T]? {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode([T].self, from: data)
+                return jsonData
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return nil
+    }
+    func encode<T: Encodable>(from data: T) {
+            do {
+                let jsonEncoder = JSONEncoder()
+                jsonEncoder.outputFormatting = .prettyPrinted
+                let json = try jsonEncoder.encode(data)
+                let jsonString = String(data: json, encoding: .utf8)
+                
+                // iOS/Mac: Save to the App's documents directory
+                saveToDocumentDirectory(jsonString)
+                
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        
+        func saveToDocumentDirectory(_ jsonString: String?) {
+            guard let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+            let fileURL = path.appendingPathComponent("CountryOutput.json")
+            print(fileURL)
+            
+            do {
+                try jsonString?.write(to: fileURL, atomically: true, encoding: .utf8)
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }
+    func readCurrency() {
+        let countrys: [Country] = loadJson(filename: "countries") ?? []
+        let rates: [Rate] = loadJson(filename: "rate") ?? []
+        let newCountry: [CountryNew] = countrys.compactMap { country in
+            if let rate = rates.first(where: {$0.code == country.currencyCode}) {
+                return CountryNew(from: country, rate: rate)
+            } else { return nil }
+        }
+        encode(from: newCountry)
+        
+        
+    }
 
+    
+}
+
+struct Country: Codable {
+    public let countryCode: String
+    public let countryName: String
+    public let currencyCode: String
+    public let capital: String
+    
+}
+
+struct CountryNew: Codable {
+    public let countryCode: String
+    public let countryName: String
+    public let currencyCode: String
+    public let capital: String
+    public let rate: String
+    public let inverseRate: Float
+
+    init(from: Country, rate: Rate) {
+        countryCode = from.countryCode
+        countryName = from.countryName
+        currencyCode = from.currencyCode
+        capital = from.capital
+        let rateT = String(format: "%.6f", rate.rate)
+        print("rateT: \(rateT)")
+        self.rate = rateT
+        inverseRate = rate.inverseRate
+    }
+}
+
+struct Rate: Codable {
+    public let code: String
+    public let alphaCode: String
+    public let numericCode: String
+    public let name: String
+    public let rate: Float
+    public let date: String
+    public let inverseRate: Float
     
 }
 

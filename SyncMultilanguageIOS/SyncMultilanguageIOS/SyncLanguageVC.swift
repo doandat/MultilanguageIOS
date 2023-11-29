@@ -12,6 +12,7 @@ import GoogleSignIn
 enum AppType {
     case retail
     case business
+    case ocb
     
     var spreadsheetId: String {
         switch self {
@@ -19,30 +20,36 @@ enum AppType {
             return "1g0E9yjIcADua42ZT5MznYsDTUHkXo8xvXg8m-8CnfhI"
         case .business:
             return "1g0E9yjIcADua42ZT5MznYsDTUHkXo8xvXg8m-8CnfhI"
+        case .ocb:
+            return "1YlkZ7xRGwA8EERvjVbknV3kfDSHfWDcY_kWFuPp5OH0"
         }
     }
     
     var localizableFileName: String {
         switch self {
         case .retail:
-            return "BBLocalizable"
+            return "Localizable"
         case .business:
-            return "BBLocalizable"
+            return "Localizable"
+        case .ocb:
+            return "Localizable"
         }
     }
 }
 
 class SyncLanguageVC: UIViewController {
     let sheetService = GTLRSheetsService()
-    var appType: AppType = .retail
+    var appType: AppType = .ocb
     var localLanguages: [MultilanguagePlistModel] = []
+    var localStringDicts: [MultilanguageStringDictModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         sheetService.apiKey = Constants.apiKey
-        localLanguages = readLocalizableFile()
+//        localLanguages = readLocalizableFile()
         
         syncMultilanguageApp()
+        syncStringDict()
 //        DispatchQueue.main.async {
 //            self.findDuplicateLocalizeEng()
 //        }
@@ -139,14 +146,17 @@ class SyncLanguageVC: UIViewController {
             }
             self.writeNewData(language: .en)
             self.writeNewData(language: .vi)
-            self.writeNewData(language: .thai)
+            self.writeNewData(language: .ko)
             self.writeNewData(language: .tc)
             self.writeNewData(language: .sc)
         }
     }
     
     private func syncMultilanguageApp() {
-        let sheets = ["Backbase Retail App"]
+//        let sheets = ["Backbase Retail App"]
+//        let sheets = ["All"]
+        let sheets = ["introduction", "login", "onboarding", "otp", "Common", "Setting", "QRCode", "BankAccount", "Transfer", "TransactionHistory", "OCB_Errors", "fotgotinformation", "iOS-permission", "Notification", "Deposit", "Cards", "Paybills", "Home", "Support", "Reward", "Mobile webview"]
+        
         getDataBBGoogleSheet(sheets: sheets) {[weak self] (resultsIOS, resultsAndroid) in
             guard let self else { return }
             for result in resultsIOS {
@@ -164,6 +174,8 @@ class SyncLanguageVC: UIViewController {
                     } else if itemLocal.thai.first?.isEmpty ?? true {
                         itemLocal.thai = ["[En] \(itemLocal.en.first ?? "")"]
                     }
+                    print("warning key duplicate: \"\(result.iosKey)\"")
+
                 } else {
                     if result.vn.first?.isEmpty ?? true {
                         result.vn = ["[En] \(result.en.first ?? "")"]
@@ -172,12 +184,28 @@ class SyncLanguageVC: UIViewController {
                         result.thai = ["[En] \(result.en.first ?? "")"]
                     }
                     self.localLanguages.append(result)
-                    print("warning key not found: \"\(result.iosKey)\"")
                 }
             }
             self.writeNewData(language: .en)
             self.writeNewData(language: .vi)
-            self.writeNewData(language: .thai)
+            self.writeNewData(language: .ko)
+//            self.writeNewData(language: .tc)
+//            self.writeNewData(language: .sc)
+        }
+    }
+    
+    private func syncStringDict() {
+//        let sheets = ["Backbase Retail App"]
+        let sheets = ["IOS_Plurals"]
+        
+        getDataStringDictGoogleSheet(sheets: sheets) {[weak self] (resultsIOS, resultsAndroid) in
+            guard let self else { return }
+            for result in resultsIOS {
+                self.localStringDicts.append(result)
+            }
+            self.writeNewData(language: .en)
+            self.writeNewData(language: .vi)
+            self.writeNewData(language: .ko)
             self.writeNewData(language: .tc)
             self.writeNewData(language: .sc)
         }
@@ -191,13 +219,31 @@ class SyncLanguageVC: UIViewController {
         shareFile(language: .vi)
     }
     @IBAction func actionThai(_ sender: Any) {
-        shareFile(language: .thai)
+        shareFile(language: .ko)
     }
     @IBAction func actionTC(_ sender: Any) {
         shareFile(language: .tc)
     }
     @IBAction func actionSC(_ sender: Any) {
         shareFile(language: .sc)
+    }
+    
+    @IBAction func engStringDict(_ sender: Any) {
+        shareFileDict(language: .en)
+    }
+    
+    @IBAction func vnStringDict(_ sender: Any) {
+        shareFileDict(language: .vi)
+    }
+    
+    @IBAction func koStringDict(_ sender: Any) {
+        shareFileDict(language: .ko)
+    }
+    
+    
+    @IBAction func readOnline(_ sender: Any) {
+        syncMultilanguageApp()
+        syncStringDict()
     }
 }
 
@@ -208,7 +254,7 @@ extension SyncLanguageVC {
         var datasAndroid: [MultilanguagePlistModel] = []
         let spreadsheetId = appType.spreadsheetId
 //        let spreadsheetId = "1lCRrxpoW696Zo9w2Z0TCdLxh2spWg0-TpNWpdP3HkFA"
-        let range = "\(sheetName)!A:H"
+        let range = "\(sheetName)!A:O"
         
         let query = GTLRSheetsQuery_SpreadsheetsValuesGet
             .query(withSpreadsheetId: spreadsheetId, range:range)
@@ -224,48 +270,48 @@ extension SyncLanguageVC {
                 completionHandler(datasIOS, datasAndroid)
                 return
             }
-            var localizeStrings: [[String]] = []
+            var localizeStrings: [[String]] = rows.filter({!$0.isEmpty})
             var arrStrings: [[[String]]] = []
             
-            let stringRows = rows.filter({!$0.isEmpty})
-            var isInArray = false
-            var currentString = stringRows[1]
-            var currentArray: [[String]] = []
-            for index in 2..<stringRows.count {
-                let row = stringRows[index]
-                if row[0].isEmpty {
-                    //array
-                    if isInArray {
-                        currentArray.append(row)
-                    } else {
-                        isInArray = true
-                        currentArray.append(currentString)
-                        currentArray.append(row)
-                    }
-                } else {
-                    //localize only
-                    if isInArray {
-                        arrStrings.append(currentArray)
-                        currentArray.removeAll()
-                    } else {
-                        localizeStrings.append(currentString)
-                    }
-                    currentString = row
-                    isInArray = false
-                }
-            }
-            if isInArray {
-                arrStrings.append(currentArray)
-            } else {
-                localizeStrings.append(currentString)
-            }
+//            let stringRows = rows.filter({!$0.isEmpty})
+//            var isInArray = false
+//            var currentString = stringRows[1]
+//            var currentArray: [[String]] = []
+//            for index in 2..<stringRows.count {
+//                let row = stringRows[index]
+//                if row[0].isEmpty {
+//                    //array
+//                    if isInArray {
+//                        currentArray.append(row)
+//                    } else {
+//                        isInArray = true
+//                        currentArray.append(currentString)
+//                        currentArray.append(row)
+//                    }
+//                } else {
+//                    //localize only
+//                    if isInArray {
+//                        arrStrings.append(currentArray)
+//                        currentArray.removeAll()
+//                    } else {
+//                        localizeStrings.append(currentString)
+//                    }
+//                    currentString = row
+//                    isInArray = false
+//                }
+//            }
+//            if isInArray {
+//                arrStrings.append(currentArray)
+//            } else {
+//                localizeStrings.append(currentString)
+//            }
             
-            let firstRow = stringRows[0]
-            let indexEng = firstRow.firstIndex(of: "EN") ?? 1
-            let indexVN = firstRow.firstIndex(of: "VN") ?? 2
-            let indexThai = firstRow.firstIndex(of: "THAI") ?? 3
+            let firstRow = localizeStrings[0]
+            let indexVN = firstRow.firstIndex(of: "VIETNAMESE") ?? 1
+            let indexEng = firstRow.firstIndex(of: "ENGLISH") ?? 2
+            let indexThai = firstRow.firstIndex(of: "KOREA") ?? 3
             
-            var indexKey = 0
+            var indexKey = 1
 //            var startTC = 3
 //            if firstRow[0] == "String ID" {
 //                indexKey = 0
@@ -274,7 +320,9 @@ extension SyncLanguageVC {
 //                indexKey = 1
 //                startTC = 4
 //            }
-            for row in localizeStrings {
+            for index in 1..<localizeStrings.count {
+                let row = localizeStrings[index]
+//            for row in localizeStrings {
                 if row.isEmpty { continue }
 //                print(row)
                 let aosKey = row[indexKey].trim
@@ -282,18 +330,15 @@ extension SyncLanguageVC {
                 if iosKey.isEmpty {
                     continue
                 }
-                if let en = row.sofValue(at: indexEng) {
-                    var vn = row.sofValue(at: indexVN) ?? en
-                    var thai = row.sofValue(at: indexThai) ?? "[En] \(en)"
+                if let vn = row.sofValue(at: indexVN) {
+                    var en = row.sofValue(at: indexEng) ?? "[VN] \(vn)"
+                    var thai = row.sofValue(at: indexThai) ?? "[VN] \(en)"
 //                    if vn.isEmpty {
 //                        vn = "[En] \(en)"
 //                    }
 //                    if thai.isEmpty {
 //                        thai = "[En] \(en)"
 //                    }
-                    if iosKey == "smf_choose_personal_identification_document_note" {
-                        debugPrint("en: \(en)")
-                    }
                     let itemLangIOS = MultilanguagePlistModel(iosKey: iosKey, aosKey: aosKey,
                                                               tc: [en.correctStringFromGoogleSheetIOS],
                                                               sc: [en.correctStringFromGoogleSheetIOS],
@@ -324,6 +369,89 @@ extension SyncLanguageVC {
         }
     }
     
+    func getDataStringDictFromGoogleSheet(sheetName: String, completionHandler: @escaping (_ ios: [MultilanguageStringDictModel],_ android: [MultilanguageStringDictModel]) -> Void) {
+        var datasIOS: [MultilanguageStringDictModel] = []
+        var datasAndroid: [MultilanguageStringDictModel] = []
+        let spreadsheetId = appType.spreadsheetId
+//        let spreadsheetId = "1lCRrxpoW696Zo9w2Z0TCdLxh2spWg0-TpNWpdP3HkFA"
+        let range = "\(sheetName)!A:I"
+        
+        let query = GTLRSheetsQuery_SpreadsheetsValuesGet
+            .query(withSpreadsheetId: spreadsheetId, range:range)
+        
+        sheetService.executeQuery(query) { (ticket, result, error) in
+            if let error = error {
+                print(error)
+                completionHandler(datasIOS, datasAndroid)
+                return
+            }
+            guard let result = result as? GTLRSheets_ValueRange,
+                  let rows = result.values as? [[String]] else {
+                completionHandler(datasIOS, datasAndroid)
+                return
+            }
+            var localizeStrings: [[String]] = rows.filter({!$0.isEmpty})
+            var arrStrings: [[[String]]] = []
+            
+            let stringRows = rows.filter({!$0.isEmpty})
+            var isInArray = false
+            var currentString = stringRows[1]
+            var currentArray: [[String]] = [currentString]
+            for index in 2..<stringRows.count {
+                let row = stringRows[index]
+                if row[1] == currentString[1] {
+                    currentArray.append(row)
+                } else {
+                    arrStrings.append(currentArray)
+                    currentArray.removeAll()
+                    currentString = row
+                    currentArray.append(row)
+                }
+            }
+            arrStrings.append(currentArray)
+            
+            let firstRow = localizeStrings[0]
+            
+            let Subkey = firstRow.firstIndex(of: "Subkey") ?? 1
+            let indexVN = firstRow.firstIndex(of: "VIETNAMESE") ?? 1
+            let indexEng = firstRow.firstIndex(of: "ENGLISH") ?? 2
+            let indexKO = firstRow.firstIndex(of: "KOREA") ?? 3
+            
+            var indexKey = 1
+            var resultArrStringDict: [MultilanguageStringDictModel] = []
+            for index in 0..<arrStrings.count {
+                var arrKeyVIT: [String] = []
+                var arrValueVIT: [String] = []
+                var arrKeyENT: [String] = []
+                var arrValueENT: [String] = []
+                var arrKeyKOT: [String] = []
+                var arrValueKOT: [String] = []
+                let key = arrStrings[index][0][indexKey]
+                for item in arrStrings[index] {
+                    arrKeyVIT.append(item[Subkey])
+                    arrValueVIT.append(item[indexVN])
+                    arrKeyENT.append(item[Subkey])
+                    arrValueENT.append(item.sofValue(at: indexEng) ?? "")
+                    arrKeyKOT.append(item[Subkey])
+                    arrValueKOT.append(item.sofValue(at: indexKO) ?? "")
+                }
+                resultArrStringDict.append(MultilanguageStringDictModel(iosKey: key, aosKey: key, enKey: arrKeyENT, en: arrValueENT, vnKey: arrKeyVIT, vn: arrValueVIT, koKey: arrKeyKOT, ko: arrValueKOT))
+
+            }
+            
+            
+
+//            print(datas)
+            if rows.isEmpty {
+                print("No data found.")
+                return
+            }
+            
+            completionHandler(resultArrStringDict, resultArrStringDict)
+            print("Number of rows in sheet: \(rows.count)")
+        }
+    }
+    
     func getDataBBGoogleSheet(sheets: [String], completionHandler: @escaping (_ ios: [MultilanguagePlistModel],_ android: [MultilanguagePlistModel]) -> Void) {
         let dispatchGroup = DispatchGroup()
         var datasIOS: [MultilanguagePlistModel] = []
@@ -331,6 +459,25 @@ extension SyncLanguageVC {
         for sheetName in sheets {
             dispatchGroup.enter()
             getDataFromBBGoogleSheet(sheetName: sheetName) { (resultsIos,resultsAndroid)  in
+                datasIOS.append(contentsOf: resultsIos)
+                datasAndroid.append(contentsOf: resultsAndroid)
+                dispatchGroup.leave()
+            }
+        }
+
+        // 1
+        dispatchGroup.notify(queue: .main, execute: { [weak self] in
+            completionHandler(datasIOS, datasAndroid)
+        })
+    }
+    
+    func getDataStringDictGoogleSheet(sheets: [String], completionHandler: @escaping (_ ios: [MultilanguageStringDictModel],_ android: [MultilanguageStringDictModel]) -> Void) {
+        let dispatchGroup = DispatchGroup()
+        var datasIOS: [MultilanguageStringDictModel] = []
+        var datasAndroid: [MultilanguageStringDictModel] = []
+        for sheetName in sheets {
+            dispatchGroup.enter()
+            getDataStringDictFromGoogleSheet(sheetName: sheetName) { (resultsIos,resultsAndroid)  in
                 datasIOS.append(contentsOf: resultsIos)
                 datasAndroid.append(contentsOf: resultsAndroid)
                 dispatchGroup.leave()
@@ -352,7 +499,7 @@ extension SyncLanguageVC {
         guard let pathSC = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.sc.toKey)) else { return []}
         guard let pathTC = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.tc.toKey)) else { return []}
         guard let pathVI = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.vi.toKey)) else { return []}
-        guard let pathThai = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.thai.toKey)) else { return []}
+        guard let pathThai = (Bundle.main.path(forResource: appType.localizableFileName, ofType: "strings", inDirectory: nil, forLocalization: LanguageKey.ko.toKey)) else { return []}
         
         guard let dictEn = NSDictionary(contentsOfFile: pathen) as? [String: String] else { return []}
         guard let dictTC = NSDictionary(contentsOfFile: pathTC) as? [String: String] else { return []}
@@ -393,12 +540,41 @@ extension SyncLanguageVC {
         let filename = getFilePath(language: language)
         print("filename:")
         print(filename)
+        
+        let resultDataStringDictT = localStringDicts.map({$0.printLanguage(language: language)}).joined()
+        var filenameStringDict = getFilePathStringDict(language: language)
+
+        var resultDataStringDict = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"><plist version=\"1.0\"><dict>\(resultDataStringDictT)</dict></plist>"
+        resultDataStringDict = resultDataStringDict.replacingOccurrences(of: "\n", with: "")
+        resultDataStringDict = resultDataStringDict.replacingOccurrences(of: "\\\"", with: "\"")
+
+        
+        do {
+            try resultData.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
+            try resultDataStringDict.write(to: filenameStringDict, atomically: true, encoding: String.Encoding.utf8)
+        } catch {
+            // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
+        }
+    }
+    
+    func writeReplaceData() {
+        let resultData = localLanguages.filter{!($0.vn.first?.contains("%@") ?? true)}.map({$0.printSedCommand(language: .vi)}).joined(separator: "\n")
+        let filename = getReplaceFilePath()
+        print("filename:")
+        print(filename)
+                
         do {
             try resultData.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
         } catch {
             // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
         }
+
     }
+    
+    func getReplaceFilePath(language: LanguageKey = .vi) -> URL {
+        getDocumentsDirectory().appendingPathComponent("Replcestring.strings")
+    }
+    
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
@@ -406,8 +582,24 @@ extension SyncLanguageVC {
     func getFilePath(language: LanguageKey = .en) -> URL {
         getDocumentsDirectory().appendingPathComponent("\(language.rawValue)_\(appType.localizableFileName).strings")
     }
+    func getFilePathStringDict(language: LanguageKey = .en) -> URL {
+        getDocumentsDirectory().appendingPathComponent("\(language.rawValue)_\(appType.localizableFileName).stringsdict")
+    }
     func shareFile(language: LanguageKey = .en) {
         let filename = getFilePath(language: language)
+        var filesToShare = [Any]()
+        // Add the path of the text file to the Array
+        filesToShare.append(filename)
+
+        // Make the activityViewContoller which shows the share-view
+        let activityViewController = UIActivityViewController(activityItems: filesToShare, applicationActivities: nil)
+
+        // Show the share-view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    func shareFileDict(language: LanguageKey = .en) {
+        let filename = getFilePathStringDict(language: language)
         var filesToShare = [Any]()
         // Add the path of the text file to the Array
         filesToShare.append(filename)

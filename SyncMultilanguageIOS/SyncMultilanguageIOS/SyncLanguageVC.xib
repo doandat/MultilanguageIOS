@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="veH-fm-b2T">
-                    <rect key="frame" x="0.0" y="252" width="393" height="348"/>
+                    <rect key="frame" x="0.0" y="222" width="393" height="408"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nf-GR-9GF" userLabel="English">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
@@ -49,13 +50,46 @@
                                 <constraint firstAttribute="height" constant="48" id="iaR-3z-mNV"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Thai"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Koria"/>
                             <connections>
                                 <action selector="actionThai:" destination="-1" eventType="touchUpInside" id="Fee-2E-mTu"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMh-d7-H5W">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUW-1o-gaA" userLabel="Vietnam">
                             <rect key="frame" x="0.0" y="180" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="80D-Ff-Hif"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="ENG_StringDict"/>
+                            <connections>
+                                <action selector="engStringDict:" destination="-1" eventType="touchUpInside" id="iH5-JJ-ktK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-hX-Ihq" userLabel="English">
+                            <rect key="frame" x="0.0" y="240" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="vDc-2y-Nuj"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Vietnamese_StringDict"/>
+                            <connections>
+                                <action selector="vnStringDict:" destination="-1" eventType="touchUpInside" id="uOV-k0-Nps"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrO-Tw-c4m">
+                            <rect key="frame" x="0.0" y="300" width="393" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="17V-C3-r1g"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Koria_VStringDict"/>
+                            <connections>
+                                <action selector="koStringDict:" destination="-1" eventType="touchUpInside" id="E3p-hF-lFW"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMh-d7-H5W">
+                            <rect key="frame" x="0.0" y="354" width="393" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="kTC-D8-slb"/>
                             </constraints>
@@ -65,8 +99,8 @@
                                 <action selector="actionTC:" destination="-1" eventType="touchUpInside" id="wfJ-Yq-aMj"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSH-ZM-2gH">
-                            <rect key="frame" x="0.0" y="240" width="393" height="48"/>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSH-ZM-2gH">
+                            <rect key="frame" x="0.0" y="354" width="393" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="Clk-Wb-Keu"/>
                             </constraints>
@@ -77,12 +111,15 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuX-s8-4yA">
-                            <rect key="frame" x="0.0" y="300" width="393" height="48"/>
+                            <rect key="frame" x="0.0" y="360" width="393" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="YaE-Td-DJg"/>
                             </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Read"/>
+                            <connections>
+                                <action selector="readOnline:" destination="-1" eventType="touchUpInside" id="7I9-lO-iSB"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -94,7 +131,7 @@
                 <constraint firstItem="veH-fm-b2T" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gdE-CG-Uza"/>
                 <constraint firstItem="veH-fm-b2T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ua2-PP-XZi"/>
             </constraints>
-            <point key="canvasLocation" x="21" y="21"/>
+            <point key="canvasLocation" x="-425" y="-32"/>
         </view>
     </objects>
     <resources>

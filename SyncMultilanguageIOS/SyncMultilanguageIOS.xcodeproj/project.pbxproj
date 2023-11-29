@@ -19,6 +19,9 @@
 		A928E6BD2A0B38F200BD85CD /* MultilanguagePlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928E6BC2A0B38F200BD85CD /* MultilanguagePlistModel.swift */; };
 		A928E6C32A0B3D3B00BD85CD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928E6C22A0B3D3B00BD85CD /* String+Extension.swift */; };
 		A928E6CB2A0B9C7A00BD85CD /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A928E6CA2A0B9C7A00BD85CD /* Array+Extension.swift */; };
+		B034E64F2A30CBEC009986DA /* rate.json in Resources */ = {isa = PBXBuildFile; fileRef = B034E64D2A30CBEC009986DA /* rate.json */; };
+		B034E6502A30CBEC009986DA /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = B034E64E2A30CBEC009986DA /* countries.json */; };
+		B06BF98C2A2AE20600A06A54 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06BF98B2A2AE20600A06A54 /* TestViewController.swift */; };
 		EE4309605DD68FB9A8019FCF /* Pods_SyncMultilanguageIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0703EB81F68F6140700144F /* Pods_SyncMultilanguageIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		A928E6C22A0B3D3B00BD85CD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A928E6CA2A0B9C7A00BD85CD /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		A928E6D12A0C952B00BD85CD /* SyncMultilanguageIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncMultilanguageIOS.entitlements; sourceTree = "<group>"; };
+		B034E64D2A30CBEC009986DA /* rate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rate.json; sourceTree = "<group>"; };
+		B034E64E2A30CBEC009986DA /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		B06BF98B2A2AE20600A06A54 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		F0703EB81F68F6140700144F /* Pods_SyncMultilanguageIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyncMultilanguageIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				A928E6D12A0C952B00BD85CD /* SyncMultilanguageIOS.entitlements */,
+				B034E64E2A30CBEC009986DA /* countries.json */,
+				B034E64D2A30CBEC009986DA /* rate.json */,
 				A928E6942A0B279900BD85CD /* AppDelegate.swift */,
 				A928E69D2A0B279B00BD85CD /* Assets.xcassets */,
 				A928E69F2A0B279B00BD85CD /* LaunchScreen.storyboard */,
@@ -120,6 +128,7 @@
 				A928E6BC2A0B38F200BD85CD /* MultilanguagePlistModel.swift */,
 				A928E6C22A0B3D3B00BD85CD /* String+Extension.swift */,
 				A928E6CA2A0B9C7A00BD85CD /* Array+Extension.swift */,
+				B06BF98B2A2AE20600A06A54 /* TestViewController.swift */,
 			);
 			path = SyncMultilanguageIOS;
 			sourceTree = "<group>";
@@ -198,9 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A928E6A12A0B279B00BD85CD /* LaunchScreen.storyboard in Resources */,
+				B034E64F2A30CBEC009986DA /* rate.json in Resources */,
 				A928E6A92A0B284500BD85CD /* GoogleService-Info.plist in Resources */,
 				A928E69E2A0B279B00BD85CD /* Assets.xcassets in Resources */,
 				A928E6B22A0B36B200BD85CD /* BBLocalizable.strings in Resources */,
+				B034E6502A30CBEC009986DA /* countries.json in Resources */,
 				A928E6AF2A0B29FF00BD85CD /* SyncLanguageVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +267,7 @@
 			files = (
 				A928E6952A0B279900BD85CD /* AppDelegate.swift in Sources */,
 				A928E6BD2A0B38F200BD85CD /* MultilanguagePlistModel.swift in Sources */,
+				B06BF98C2A2AE20600A06A54 /* TestViewController.swift in Sources */,
 				A928E6BB2A0B379B00BD85CD /* MultilanguageModel.swift in Sources */,
 				A928E6AE2A0B29FF00BD85CD /* SyncLanguageVC.swift in Sources */,
 				A928E6CB2A0B9C7A00BD85CD /* Array+Extension.swift in Sources */,
@@ -418,26 +430,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SyncMultilanguageIOS/SyncMultilanguageIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = PW7R47X2F8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SyncMultilanguageIOS",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SyncMultilanguageIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sync Language";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartosc.googlesheet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smo.synclanguage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -453,26 +466,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SyncMultilanguageIOS/SyncMultilanguageIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5J9CB2NJD;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = PW7R47X2F8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SyncMultilanguageIOS",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SyncMultilanguageIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sync Language";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartosc.googlesheet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smo.synclanguage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
