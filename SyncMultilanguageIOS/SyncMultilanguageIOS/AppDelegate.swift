@@ -9,7 +9,7 @@ import UIKit
 import GoogleSignIn
 import Firebase
 import CoreData
-import SOFCommons
+//import SOFCommons
 
 public protocol SOFBankAccountBaseInfo {
     var sofBankAccountName: String { get }
@@ -80,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rsss = test.correctStringFromGoogleSheetIOS
         debugPrint(rsss)
         
-        let item = "Constants.additionalScopes".isFormatCurrencyCorrect
+//        let item = "Constants.additionalScopes".isFormatCurrencyCorrect
         FirebaseApp.configure()
 //        account = SOFBankAccount(textString: "Dat")
 //        print(account?.sofInterested)

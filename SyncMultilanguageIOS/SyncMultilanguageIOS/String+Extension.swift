@@ -24,7 +24,11 @@ extension String {
             .replacingOccurrences(of: "\"", with: "\\\"")
     }
     var correctStringFromGoogleSheetIOS: String {
-        return replacingOccurrences(of: "\\", with: "\\\\")
+        if self.contains("have any payment account") {
+            print("self: \(self)")
+        }
+        
+        let result = replacingOccurrences(of: "\\", with: "\\\\")
             .replacingOccurrences(of: "%d", with: "%@")
             .replacingOccurrences(of: "%1$d", with: "%1$@")
             .replacingOccurrences(of: "%2$d", with: "%2$@")
@@ -45,7 +49,9 @@ extension String {
             .replacingOccurrences(of: "%5$f", with: "%5$@")
             .replacingOccurrences(of: "\"", with: "\\\"")
             .replacingOccurrences(of: "\\\\n", with: "\\n")
+            .replacingOccurrences(of: "\\\\\'", with: "'")
             .trimmingCharacters(in: .whitespacesAndNewlines)
+        return result
     }
     var correctStringFromGoogleSheetAndroid: String {
         return replacingOccurrences(of: "\\", with: "\\\\")

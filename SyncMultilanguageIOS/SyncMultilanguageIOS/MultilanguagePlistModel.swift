@@ -28,6 +28,7 @@ class MultilanguagePlistModel {
     
     func printLanguage(isIOS: Bool = true, language: LanguageKey) -> String {
         let key = isIOS ? iosKey : aosKey
+        
         if en.count > 1 {
             var values: [String] = []
             switch language {
@@ -45,6 +46,10 @@ class MultilanguagePlistModel {
             let value = values.reduce("") { $0 + "\"\($1)\",\n" }
             return "\"\(key)\" = (\n\(value));"
         } else {
+            if language == .en, en[0].contains("[VN]") {
+                print("translate: \(key)")
+            }
+            
             switch language {
             case .tc:
                 return "\"\(key)\" = \"\(tc[0])\";"

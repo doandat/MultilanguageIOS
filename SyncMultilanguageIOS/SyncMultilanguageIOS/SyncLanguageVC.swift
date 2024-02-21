@@ -45,6 +45,9 @@ class SyncLanguageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        replaceString()
+//        return
+        
         sheetService.apiKey = Constants.apiKey
 //        localLanguages = readLocalizableFile()
         
@@ -155,7 +158,8 @@ class SyncLanguageVC: UIViewController {
     private func syncMultilanguageApp() {
 //        let sheets = ["Backbase Retail App"]
 //        let sheets = ["All"]
-        let sheets = ["introduction", "login", "onboarding", "otp", "Common", "Setting", "QRCode", "BankAccount", "Transfer", "TransactionHistory", "OCB_Errors", "fotgotinformation", "iOS-permission", "Notification", "Deposit", "Cards", "Paybills", "Home", "Support", "Reward", "Mobile webview"]
+        let sheets = ["Survey_InappRating", "VNpay","introduction", "login", "onboarding", "otp", "Common", "Setting", "QRCode", "BankAccount", "Transfer", "TransactionHistory", "FavoriteTransaction", "OCB_Errors", "fotgotinformation", "iOS-permission", "Notification", "Deposit", "Cards", "Paybills", "Home", "Support", "Reward", "Mobile webview", "PhoneTopup", "All product", "QRCash", "Nudge", "Lending"]
+//        let sheets = ["onboarding"]
         
         getDataBBGoogleSheet(sheets: sheets) {[weak self] (resultsIOS, resultsAndroid) in
             guard let self else { return }
@@ -255,7 +259,6 @@ extension SyncLanguageVC {
         let spreadsheetId = appType.spreadsheetId
 //        let spreadsheetId = "1lCRrxpoW696Zo9w2Z0TCdLxh2spWg0-TpNWpdP3HkFA"
         let range = "\(sheetName)!A:O"
-        
         let query = GTLRSheetsQuery_SpreadsheetsValuesGet
             .query(withSpreadsheetId: spreadsheetId, range:range)
         
@@ -307,6 +310,7 @@ extension SyncLanguageVC {
 //            }
             
             let firstRow = localizeStrings[0]
+            let iosIndex = firstRow.firstIndex(of: "iOS") ?? 1
             let indexVN = firstRow.firstIndex(of: "VIETNAMESE") ?? 1
             let indexEng = firstRow.firstIndex(of: "ENGLISH") ?? 2
             let indexThai = firstRow.firstIndex(of: "KOREA") ?? 3
@@ -323,16 +327,26 @@ extension SyncLanguageVC {
             for index in 1..<localizeStrings.count {
                 let row = localizeStrings[index]
 //            for row in localizeStrings {
-                if row.isEmpty { continue }
+                if row.isEmpty || row.count < 5 || row.map({$0.trim}).allSatisfy({$0.isEmpty}) { continue }
 //                print(row)
                 let aosKey = row[indexKey].trim
                 let iosKey = row[indexKey].trim
-                if iosKey.isEmpty {
+                let iosSkip = row[iosIndex].trim == "SKIP"
+                if iosKey.isEmpty || iosSkip {
                     continue
+                }
+                if iosKey == "search.label.hello" {
+                    print("iosKey: \(iosKey)")
                 }
                 if let vn = row.sofValue(at: indexVN) {
                     var en = row.sofValue(at: indexEng) ?? "[VN] \(vn)"
+                    if en.trim.isEmpty {
+                        en = "[VN] \(vn)"
+                    }
                     var thai = row.sofValue(at: indexThai) ?? "[VN] \(en)"
+                    if thai.trim.isEmpty {
+                        thai = "[VN] \(vn)"
+                    }
 //                    if vn.isEmpty {
 //                        vn = "[En] \(en)"
 //                    }
@@ -366,7 +380,7 @@ extension SyncLanguageVC {
             
             completionHandler(datasIOS, datasAndroid)
             print("Number of rows in sheet: \(rows.count)")
-        }
+        }        
     }
     
     func getDataStringDictFromGoogleSheet(sheetName: String, completionHandler: @escaping (_ ios: [MultilanguageStringDictModel],_ android: [MultilanguageStringDictModel]) -> Void) {
@@ -790,3 +804,43 @@ extension SyncLanguageVC {
     
 }
 
+
+extension SyncLanguageVC {
+    func replaceString() {
+        let keys = getKey()
+        let values = getValues()
+        for i in 0..<keys.count {
+            let key = keys[i]
+//            let keyResult = "L10n."+key.split(separator: ".").map({$0.firstUppercased}).joined(separator: ".").firstLowercase
+            let keyResult = "L10n."+convertToCamelCase(key)
+            let value = values[i]
+            print("find /Users/doandat/Documents/OCBGit/OCBNewOMNI1 -type f -name \"*.swift\" -exec sed -i '' 's/\(value)/\(keyResult)/g' {} +")
+        }
+    }
+    
+    func convertToCamelCase(_ input: String) -> String {
+        let components = input.split(separator: ".")
+        if let last = components.last {
+            return components.dropLast().map({$0.firstUppercased}).joined(separator: ".") + "." + last
+        }
+        
+        return ""
+    }
+
+        
+    func getValues() -> [String] {
+        return [
+            "Xoá khỏi danh sách đã lưu",
+            "Bạn muốn xóa thông tin người nhận?"
+        ]
+    }
+    
+    func getKey() -> [String] {
+        
+        let values = [
+            "transfer.contact.delete.title",
+            "transfer.contact.delete.content"
+        ]
+        return values
+    }
+}
